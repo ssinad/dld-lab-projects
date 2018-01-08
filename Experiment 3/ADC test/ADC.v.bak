@@ -1,0 +1,12 @@
+module ADC();
+	input CLOCK_50;
+	input rst;
+	input search_clk;
+	input compare;
+	output pwm_out;
+	output[7:0] bs_out;
+	
+	BinarySearch bs(search_clk, rst, bs_out, compare);
+	PWM pwm(bs_out, CLOCK_50, pwm_out, rst );
+	
+endmodule

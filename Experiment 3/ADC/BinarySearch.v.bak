@@ -1,0 +1,2 @@
+module BinarySearch( clk, out1, compares);
+endmodule

@@ -1,0 +1,9 @@
+module FreqSel(sel, clk_in, clk_out);
+	input clk_in;
+	output clk_out;
+	input[1:0] sel;
+	reg[8:0] i;
+	always @(posedge clk_in)
+		begin
+		end
+endmodule

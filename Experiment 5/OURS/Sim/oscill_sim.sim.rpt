@@ -1,0 +1,1029 @@
+Simulator report for oscill_sim
+Mon Dec 23 04:55:10 2013
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 548 nodes    ;
+; Simulation Coverage         ;      38.10 % ;
+; Total Number of Transitions ; 35616        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; D:/7th Term/DLD Lab/Experiment 5/OURS/Sim/new_test.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      38.10 % ;
+; Total nodes checked                                 ; 548          ;
+; Total output ports checked                          ; 546          ;
+; Total output ports with complete 1/0-value coverage ; 208          ;
+; Total output ports with no 1/0-value coverage       ; 321          ;
+; Total output ports with no 1-value coverage         ; 329          ;
+; Total output ports with no 0-value coverage         ; 330          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |testcases|clk                               ; |testcases|clk                               ; out              ;
+; |testcases|adc_sample[0]                     ; |testcases|adc_sample[0]                     ; out              ;
+; |testcases|adc_sample[1]                     ; |testcases|adc_sample[1]                     ; out              ;
+; |testcases|adc_sample[2]                     ; |testcases|adc_sample[2]                     ; out              ;
+; |testcases|adc_sample[3]                     ; |testcases|adc_sample[3]                     ; out              ;
+; |testcases|adc_sample[4]                     ; |testcases|adc_sample[4]                     ; out              ;
+; |testcases|adc_sample[5]                     ; |testcases|adc_sample[5]                     ; out              ;
+; |testcases|clk_out                           ; |testcases|clk_out                           ; pin_out          ;
+; |testcases|func_clk                          ; |testcases|func_clk                          ; pin_out          ;
+; |testcases|wraddress[0]                      ; |testcases|wraddress[0]                      ; pin_out          ;
+; |testcases|wraddress[1]                      ; |testcases|wraddress[1]                      ; pin_out          ;
+; |testcases|wraddress[2]                      ; |testcases|wraddress[2]                      ; pin_out          ;
+; |testcases|wraddress[3]                      ; |testcases|wraddress[3]                      ; pin_out          ;
+; |testcases|wraddress[4]                      ; |testcases|wraddress[4]                      ; pin_out          ;
+; |testcases|wraddress[5]                      ; |testcases|wraddress[5]                      ; pin_out          ;
+; |testcases|wraddress[6]                      ; |testcases|wraddress[6]                      ; pin_out          ;
+; |testcases|wraddress[7]                      ; |testcases|wraddress[7]                      ; pin_out          ;
+; |testcases|trig_ctrl:i8|prev[5]              ; |testcases|trig_ctrl:i8|prev[5]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[4]              ; |testcases|trig_ctrl:i8|prev[4]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[3]              ; |testcases|trig_ctrl:i8|prev[3]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[2]              ; |testcases|trig_ctrl:i8|prev[2]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[1]              ; |testcases|trig_ctrl:i8|prev[1]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[0]              ; |testcases|trig_ctrl:i8|prev[0]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[5]             ; |testcases|trig_ctrl:i8|prev2[5]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[4]             ; |testcases|trig_ctrl:i8|prev2[4]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[3]             ; |testcases|trig_ctrl:i8|prev2[3]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[2]             ; |testcases|trig_ctrl:i8|prev2[2]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[1]             ; |testcases|trig_ctrl:i8|prev2[1]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[0]             ; |testcases|trig_ctrl:i8|prev2[0]             ; regout           ;
+; |testcases|trig_ctrl:i8|comb~0               ; |testcases|trig_ctrl:i8|comb~0               ; out0             ;
+; |testcases|trig_ctrl:i8|comb~1               ; |testcases|trig_ctrl:i8|comb~1               ; out0             ;
+; |testcases|trig_ctrl:i8|norm_trig            ; |testcases|trig_ctrl:i8|norm_trig            ; out0             ;
+; |testcases|trig_ctrl:i8|asghar[3]            ; |testcases|trig_ctrl:i8|asghar[3]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[2]            ; |testcases|trig_ctrl:i8|asghar[2]            ; regout           ;
+; |testcases|trig_ctrl:i8|trig_en              ; |testcases|trig_ctrl:i8|trig_en              ; out0             ;
+; |testcases|trig_ctrl:i8|asghar[1]            ; |testcases|trig_ctrl:i8|asghar[1]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[0]            ; |testcases|trig_ctrl:i8|asghar[0]            ; regout           ;
+; |testcases|trig_ctrl:i8|always2~0            ; |testcases|trig_ctrl:i8|always2~0            ; out0             ;
+; |testcases|trig_ctrl:i8|always2~1            ; |testcases|trig_ctrl:i8|always2~1            ; out0             ;
+; |testcases|trig_ctrl:i8|asghar~15            ; |testcases|trig_ctrl:i8|asghar~15            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~16            ; |testcases|trig_ctrl:i8|asghar~16            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~17            ; |testcases|trig_ctrl:i8|asghar~17            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~18            ; |testcases|trig_ctrl:i8|asghar~18            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~19            ; |testcases|trig_ctrl:i8|asghar~19            ; out              ;
+; |testcases|wr_adr_gen:i6|count[0]            ; |testcases|wr_adr_gen:i6|count[0]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count~0             ; |testcases|wr_adr_gen:i6|count~0             ; out              ;
+; |testcases|wr_adr_gen:i6|count~1             ; |testcases|wr_adr_gen:i6|count~1             ; out              ;
+; |testcases|wr_adr_gen:i6|count~2             ; |testcases|wr_adr_gen:i6|count~2             ; out              ;
+; |testcases|wr_adr_gen:i6|count~3             ; |testcases|wr_adr_gen:i6|count~3             ; out              ;
+; |testcases|wr_adr_gen:i6|count~4             ; |testcases|wr_adr_gen:i6|count~4             ; out              ;
+; |testcases|wr_adr_gen:i6|count~5             ; |testcases|wr_adr_gen:i6|count~5             ; out              ;
+; |testcases|wr_adr_gen:i6|count~6             ; |testcases|wr_adr_gen:i6|count~6             ; out              ;
+; |testcases|wr_adr_gen:i6|count~7             ; |testcases|wr_adr_gen:i6|count~7             ; out              ;
+; |testcases|wr_adr_gen:i6|count~8             ; |testcases|wr_adr_gen:i6|count~8             ; out              ;
+; |testcases|wr_adr_gen:i6|count~9             ; |testcases|wr_adr_gen:i6|count~9             ; out              ;
+; |testcases|wr_adr_gen:i6|count~10            ; |testcases|wr_adr_gen:i6|count~10            ; out              ;
+; |testcases|wr_adr_gen:i6|count~11            ; |testcases|wr_adr_gen:i6|count~11            ; out              ;
+; |testcases|wr_adr_gen:i6|count~12            ; |testcases|wr_adr_gen:i6|count~12            ; out              ;
+; |testcases|wr_adr_gen:i6|count~13            ; |testcases|wr_adr_gen:i6|count~13            ; out              ;
+; |testcases|wr_adr_gen:i6|count~14            ; |testcases|wr_adr_gen:i6|count~14            ; out              ;
+; |testcases|wr_adr_gen:i6|count~15            ; |testcases|wr_adr_gen:i6|count~15            ; out              ;
+; |testcases|wr_adr_gen:i6|count~16            ; |testcases|wr_adr_gen:i6|count~16            ; out              ;
+; |testcases|wr_adr_gen:i6|count~17            ; |testcases|wr_adr_gen:i6|count~17            ; out              ;
+; |testcases|wr_adr_gen:i6|count~18            ; |testcases|wr_adr_gen:i6|count~18            ; out              ;
+; |testcases|wr_adr_gen:i6|count~19            ; |testcases|wr_adr_gen:i6|count~19            ; out              ;
+; |testcases|wr_adr_gen:i6|count[7]            ; |testcases|wr_adr_gen:i6|count[7]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[6]            ; |testcases|wr_adr_gen:i6|count[6]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[5]            ; |testcases|wr_adr_gen:i6|count[5]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[4]            ; |testcases|wr_adr_gen:i6|count[4]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[3]            ; |testcases|wr_adr_gen:i6|count[3]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[2]            ; |testcases|wr_adr_gen:i6|count[2]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[1]            ; |testcases|wr_adr_gen:i6|count[1]            ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps~0        ; |testcases|wr_adr_gen:i6|ctrl:cu|ps~0        ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps~5        ; |testcases|wr_adr_gen:i6|ctrl:cu|ps~5        ; out0             ;
+; |testcases|time_division:i5|always1~0        ; |testcases|time_division:i5|always1~0        ; out0             ;
+; |testcases|time_division:i5|func_timer~16    ; |testcases|time_division:i5|func_timer~16    ; out              ;
+; |testcases|time_division:i5|func_timer~17    ; |testcases|time_division:i5|func_timer~17    ; out              ;
+; |testcases|time_division:i5|func_timer~18    ; |testcases|time_division:i5|func_timer~18    ; out              ;
+; |testcases|time_division:i5|func_timer~19    ; |testcases|time_division:i5|func_timer~19    ; out              ;
+; |testcases|time_division:i5|func_timer[2]    ; |testcases|time_division:i5|func_timer[2]    ; regout           ;
+; |testcases|time_division:i5|clk_out~0        ; |testcases|time_division:i5|clk_out~0        ; out              ;
+; |testcases|time_division:i5|clk_out~1        ; |testcases|time_division:i5|clk_out~1        ; out              ;
+; |testcases|time_division:i5|func_timer[0]    ; |testcases|time_division:i5|func_timer[0]    ; regout           ;
+; |testcases|time_division:i5|func_timer[1]    ; |testcases|time_division:i5|func_timer[1]    ; regout           ;
+; |testcases|time_division:i5|func_clk         ; |testcases|time_division:i5|func_clk         ; regout           ;
+; |testcases|time_division:i5|func_clk~0       ; |testcases|time_division:i5|func_clk~0       ; out              ;
+; |testcases|time_division:i5|func_clk~1       ; |testcases|time_division:i5|func_clk~1       ; out              ;
+; |testcases|time_division:i5|clk_out          ; |testcases|time_division:i5|clk_out          ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~2 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~2 ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~3          ; |testcases|trig_ctrl:i8|LessThan0~3          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~5          ; |testcases|trig_ctrl:i8|LessThan0~5          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~6          ; |testcases|trig_ctrl:i8|LessThan0~6          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~7          ; |testcases|trig_ctrl:i8|LessThan0~7          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~10         ; |testcases|trig_ctrl:i8|LessThan0~10         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~11         ; |testcases|trig_ctrl:i8|LessThan0~11         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~12         ; |testcases|trig_ctrl:i8|LessThan0~12         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~13         ; |testcases|trig_ctrl:i8|LessThan0~13         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~14         ; |testcases|trig_ctrl:i8|LessThan0~14         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~15         ; |testcases|trig_ctrl:i8|LessThan0~15         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~16         ; |testcases|trig_ctrl:i8|LessThan0~16         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~18         ; |testcases|trig_ctrl:i8|LessThan0~18         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~19         ; |testcases|trig_ctrl:i8|LessThan0~19         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~20         ; |testcases|trig_ctrl:i8|LessThan0~20         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~22         ; |testcases|trig_ctrl:i8|LessThan0~22         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~24         ; |testcases|trig_ctrl:i8|LessThan0~24         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~26         ; |testcases|trig_ctrl:i8|LessThan0~26         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~28         ; |testcases|trig_ctrl:i8|LessThan0~28         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~0          ; |testcases|trig_ctrl:i8|LessThan1~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~2          ; |testcases|trig_ctrl:i8|LessThan1~2          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~3          ; |testcases|trig_ctrl:i8|LessThan1~3          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~4          ; |testcases|trig_ctrl:i8|LessThan1~4          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~5          ; |testcases|trig_ctrl:i8|LessThan1~5          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~6          ; |testcases|trig_ctrl:i8|LessThan1~6          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~8          ; |testcases|trig_ctrl:i8|LessThan1~8          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~9          ; |testcases|trig_ctrl:i8|LessThan1~9          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~10         ; |testcases|trig_ctrl:i8|LessThan1~10         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~11         ; |testcases|trig_ctrl:i8|LessThan1~11         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~12         ; |testcases|trig_ctrl:i8|LessThan1~12         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~13         ; |testcases|trig_ctrl:i8|LessThan1~13         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~14         ; |testcases|trig_ctrl:i8|LessThan1~14         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~16         ; |testcases|trig_ctrl:i8|LessThan1~16         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~17         ; |testcases|trig_ctrl:i8|LessThan1~17         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~18         ; |testcases|trig_ctrl:i8|LessThan1~18         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~19         ; |testcases|trig_ctrl:i8|LessThan1~19         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~20         ; |testcases|trig_ctrl:i8|LessThan1~20         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~21         ; |testcases|trig_ctrl:i8|LessThan1~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~22         ; |testcases|trig_ctrl:i8|LessThan1~22         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~24         ; |testcases|trig_ctrl:i8|LessThan1~24         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~26         ; |testcases|trig_ctrl:i8|LessThan1~26         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~28         ; |testcases|trig_ctrl:i8|LessThan1~28         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~30         ; |testcases|trig_ctrl:i8|LessThan1~30         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~0          ; |testcases|trig_ctrl:i8|LessThan2~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~1          ; |testcases|trig_ctrl:i8|LessThan2~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~2          ; |testcases|trig_ctrl:i8|LessThan2~2          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~3          ; |testcases|trig_ctrl:i8|LessThan2~3          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~4          ; |testcases|trig_ctrl:i8|LessThan2~4          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~6          ; |testcases|trig_ctrl:i8|LessThan2~6          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~7          ; |testcases|trig_ctrl:i8|LessThan2~7          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~8          ; |testcases|trig_ctrl:i8|LessThan2~8          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~9          ; |testcases|trig_ctrl:i8|LessThan2~9          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~10         ; |testcases|trig_ctrl:i8|LessThan2~10         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~11         ; |testcases|trig_ctrl:i8|LessThan2~11         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~12         ; |testcases|trig_ctrl:i8|LessThan2~12         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~14         ; |testcases|trig_ctrl:i8|LessThan2~14         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~15         ; |testcases|trig_ctrl:i8|LessThan2~15         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~16         ; |testcases|trig_ctrl:i8|LessThan2~16         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~17         ; |testcases|trig_ctrl:i8|LessThan2~17         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~18         ; |testcases|trig_ctrl:i8|LessThan2~18         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~19         ; |testcases|trig_ctrl:i8|LessThan2~19         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~20         ; |testcases|trig_ctrl:i8|LessThan2~20         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~22         ; |testcases|trig_ctrl:i8|LessThan2~22         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~24         ; |testcases|trig_ctrl:i8|LessThan2~24         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~26         ; |testcases|trig_ctrl:i8|LessThan2~26         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~28         ; |testcases|trig_ctrl:i8|LessThan2~28         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~1          ; |testcases|trig_ctrl:i8|LessThan3~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~2          ; |testcases|trig_ctrl:i8|LessThan3~2          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~4          ; |testcases|trig_ctrl:i8|LessThan3~4          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~5          ; |testcases|trig_ctrl:i8|LessThan3~5          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~6          ; |testcases|trig_ctrl:i8|LessThan3~6          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~7          ; |testcases|trig_ctrl:i8|LessThan3~7          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~8          ; |testcases|trig_ctrl:i8|LessThan3~8          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~9          ; |testcases|trig_ctrl:i8|LessThan3~9          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~10         ; |testcases|trig_ctrl:i8|LessThan3~10         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~12         ; |testcases|trig_ctrl:i8|LessThan3~12         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~13         ; |testcases|trig_ctrl:i8|LessThan3~13         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~14         ; |testcases|trig_ctrl:i8|LessThan3~14         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~15         ; |testcases|trig_ctrl:i8|LessThan3~15         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~16         ; |testcases|trig_ctrl:i8|LessThan3~16         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~17         ; |testcases|trig_ctrl:i8|LessThan3~17         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~18         ; |testcases|trig_ctrl:i8|LessThan3~18         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~20         ; |testcases|trig_ctrl:i8|LessThan3~20         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~21         ; |testcases|trig_ctrl:i8|LessThan3~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~22         ; |testcases|trig_ctrl:i8|LessThan3~22         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~24         ; |testcases|trig_ctrl:i8|LessThan3~24         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~26         ; |testcases|trig_ctrl:i8|LessThan3~26         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~28         ; |testcases|trig_ctrl:i8|LessThan3~28         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~30         ; |testcases|trig_ctrl:i8|LessThan3~30         ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~0               ; |testcases|trig_ctrl:i8|Add0~0               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~1               ; |testcases|trig_ctrl:i8|Add0~1               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~2               ; |testcases|trig_ctrl:i8|Add0~2               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~3               ; |testcases|trig_ctrl:i8|Add0~3               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~4               ; |testcases|trig_ctrl:i8|Add0~4               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~5               ; |testcases|trig_ctrl:i8|Add0~5               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~6               ; |testcases|trig_ctrl:i8|Add0~6               ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~0              ; |testcases|wr_adr_gen:i6|Add0~0              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~1              ; |testcases|wr_adr_gen:i6|Add0~1              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~2              ; |testcases|wr_adr_gen:i6|Add0~2              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~3              ; |testcases|wr_adr_gen:i6|Add0~3              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~4              ; |testcases|wr_adr_gen:i6|Add0~4              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~5              ; |testcases|wr_adr_gen:i6|Add0~5              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~6              ; |testcases|wr_adr_gen:i6|Add0~6              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~7              ; |testcases|wr_adr_gen:i6|Add0~7              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~8              ; |testcases|wr_adr_gen:i6|Add0~8              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~9              ; |testcases|wr_adr_gen:i6|Add0~9              ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~10             ; |testcases|wr_adr_gen:i6|Add0~10             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~11             ; |testcases|wr_adr_gen:i6|Add0~11             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~12             ; |testcases|wr_adr_gen:i6|Add0~12             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~13             ; |testcases|wr_adr_gen:i6|Add0~13             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~14             ; |testcases|wr_adr_gen:i6|Add0~14             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~15             ; |testcases|wr_adr_gen:i6|Add0~15             ; out0             ;
+; |testcases|wr_adr_gen:i6|Add0~16             ; |testcases|wr_adr_gen:i6|Add0~16             ; out0             ;
+; |testcases|time_division:i5|Add1~0           ; |testcases|time_division:i5|Add1~0           ; out0             ;
+; |testcases|time_division:i5|Add1~1           ; |testcases|time_division:i5|Add1~1           ; out0             ;
+; |testcases|time_division:i5|Add1~2           ; |testcases|time_division:i5|Add1~2           ; out0             ;
+; |testcases|time_division:i5|Add1~3           ; |testcases|time_division:i5|Add1~3           ; out0             ;
+; |testcases|time_division:i5|Add1~4           ; |testcases|time_division:i5|Add1~4           ; out0             ;
+; |testcases|trig_ctrl:i8|Equal0~0             ; |testcases|trig_ctrl:i8|Equal0~0             ; out0             ;
+; |testcases|time_division:i5|Equal2~0         ; |testcases|time_division:i5|Equal2~0         ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |testcases|rst                               ; |testcases|rst                               ; out              ;
+; |testcases|slope                             ; |testcases|slope                             ; out              ;
+; |testcases|mode                              ; |testcases|mode                              ; out              ;
+; |testcases|level[0]                          ; |testcases|level[0]                          ; out              ;
+; |testcases|level[1]                          ; |testcases|level[1]                          ; out              ;
+; |testcases|level[2]                          ; |testcases|level[2]                          ; out              ;
+; |testcases|level[3]                          ; |testcases|level[3]                          ; out              ;
+; |testcases|level[4]                          ; |testcases|level[4]                          ; out              ;
+; |testcases|level[5]                          ; |testcases|level[5]                          ; out              ;
+; |testcases|level[6]                          ; |testcases|level[6]                          ; out              ;
+; |testcases|level[7]                          ; |testcases|level[7]                          ; out              ;
+; |testcases|time_per_div[0]                   ; |testcases|time_per_div[0]                   ; out              ;
+; |testcases|time_per_div[1]                   ; |testcases|time_per_div[1]                   ; out              ;
+; |testcases|adc_sample[6]                     ; |testcases|adc_sample[6]                     ; out              ;
+; |testcases|adc_sample[7]                     ; |testcases|adc_sample[7]                     ; out              ;
+; |testcases|rst_trig                          ; |testcases|rst_trig                          ; pin_out          ;
+; |testcases|wraddress[9]                      ; |testcases|wraddress[9]                      ; pin_out          ;
+; |testcases|trig_ctrl:i8|asghar[6]            ; |testcases|trig_ctrl:i8|asghar[6]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[5]            ; |testcases|trig_ctrl:i8|asghar[5]            ; regout           ;
+; |testcases|trig_ctrl:i8|prev[7]              ; |testcases|trig_ctrl:i8|prev[7]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[6]              ; |testcases|trig_ctrl:i8|prev[6]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[7]             ; |testcases|trig_ctrl:i8|prev2[7]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[6]             ; |testcases|trig_ctrl:i8|prev2[6]             ; regout           ;
+; |testcases|trig_ctrl:i8|always1~0            ; |testcases|trig_ctrl:i8|always1~0            ; out0             ;
+; |testcases|trig_ctrl:i8|comb~2               ; |testcases|trig_ctrl:i8|comb~2               ; out0             ;
+; |testcases|trig_ctrl:i8|comb~3               ; |testcases|trig_ctrl:i8|comb~3               ; out0             ;
+; |testcases|trig_ctrl:i8|asghar[4]            ; |testcases|trig_ctrl:i8|asghar[4]            ; regout           ;
+; |testcases|trig_ctrl:i8|trig_en~0            ; |testcases|trig_ctrl:i8|trig_en~0            ; out0             ;
+; |testcases|trig_ctrl:i8|asghar~0             ; |testcases|trig_ctrl:i8|asghar~0             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~1             ; |testcases|trig_ctrl:i8|asghar~1             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~2             ; |testcases|trig_ctrl:i8|asghar~2             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~3             ; |testcases|trig_ctrl:i8|asghar~3             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~4             ; |testcases|trig_ctrl:i8|asghar~4             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~5             ; |testcases|trig_ctrl:i8|asghar~5             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~6             ; |testcases|trig_ctrl:i8|asghar~6             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~7             ; |testcases|trig_ctrl:i8|asghar~7             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~8             ; |testcases|trig_ctrl:i8|asghar~8             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~9             ; |testcases|trig_ctrl:i8|asghar~9             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~10            ; |testcases|trig_ctrl:i8|asghar~10            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~11            ; |testcases|trig_ctrl:i8|asghar~11            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~12            ; |testcases|trig_ctrl:i8|asghar~12            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~13            ; |testcases|trig_ctrl:i8|asghar~13            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~14            ; |testcases|trig_ctrl:i8|asghar~14            ; out              ;
+; |testcases|trig_ctrl:i8|asghar[7]            ; |testcases|trig_ctrl:i8|asghar[7]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[8]            ; |testcases|trig_ctrl:i8|asghar[8]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[9]            ; |testcases|trig_ctrl:i8|asghar[9]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[10]           ; |testcases|trig_ctrl:i8|asghar[10]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[11]           ; |testcases|trig_ctrl:i8|asghar[11]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[12]           ; |testcases|trig_ctrl:i8|asghar[12]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[13]           ; |testcases|trig_ctrl:i8|asghar[13]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[14]           ; |testcases|trig_ctrl:i8|asghar[14]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[15]           ; |testcases|trig_ctrl:i8|asghar[15]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[16]           ; |testcases|trig_ctrl:i8|asghar[16]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[17]           ; |testcases|trig_ctrl:i8|asghar[17]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[18]           ; |testcases|trig_ctrl:i8|asghar[18]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[19]           ; |testcases|trig_ctrl:i8|asghar[19]           ; regout           ;
+; |testcases|wr_adr_gen:i6|count[9]            ; |testcases|wr_adr_gen:i6|count[9]            ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.00       ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.00       ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ns.10       ; |testcases|wr_adr_gen:i6|ctrl:cu|ns.10       ; out              ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10       ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10       ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps~1        ; |testcases|wr_adr_gen:i6|ctrl:cu|ps~1        ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~0 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~0 ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10~0     ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10~0     ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|rst_trig    ; |testcases|wr_adr_gen:i6|ctrl:cu|rst_trig    ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps~9        ; |testcases|wr_adr_gen:i6|ctrl:cu|ps~9        ; out0             ;
+; |testcases|time_division:i5|timer[19]        ; |testcases|time_division:i5|timer[19]        ; regout           ;
+; |testcases|time_division:i5|timer[18]        ; |testcases|time_division:i5|timer[18]        ; regout           ;
+; |testcases|time_division:i5|timer[17]        ; |testcases|time_division:i5|timer[17]        ; regout           ;
+; |testcases|time_division:i5|timer[16]        ; |testcases|time_division:i5|timer[16]        ; regout           ;
+; |testcases|time_division:i5|timer[15]        ; |testcases|time_division:i5|timer[15]        ; regout           ;
+; |testcases|time_division:i5|timer[14]        ; |testcases|time_division:i5|timer[14]        ; regout           ;
+; |testcases|time_division:i5|timer[13]        ; |testcases|time_division:i5|timer[13]        ; regout           ;
+; |testcases|time_division:i5|timer[12]        ; |testcases|time_division:i5|timer[12]        ; regout           ;
+; |testcases|time_division:i5|timer[11]        ; |testcases|time_division:i5|timer[11]        ; regout           ;
+; |testcases|time_division:i5|timer[10]        ; |testcases|time_division:i5|timer[10]        ; regout           ;
+; |testcases|time_division:i5|timer[9]         ; |testcases|time_division:i5|timer[9]         ; regout           ;
+; |testcases|time_division:i5|timer[8]         ; |testcases|time_division:i5|timer[8]         ; regout           ;
+; |testcases|time_division:i5|timer[7]         ; |testcases|time_division:i5|timer[7]         ; regout           ;
+; |testcases|time_division:i5|timer[6]         ; |testcases|time_division:i5|timer[6]         ; regout           ;
+; |testcases|time_division:i5|timer[5]         ; |testcases|time_division:i5|timer[5]         ; regout           ;
+; |testcases|time_division:i5|timer[4]         ; |testcases|time_division:i5|timer[4]         ; regout           ;
+; |testcases|time_division:i5|always0~0        ; |testcases|time_division:i5|always0~0        ; out0             ;
+; |testcases|time_division:i5|timer~0          ; |testcases|time_division:i5|timer~0          ; out              ;
+; |testcases|time_division:i5|timer~1          ; |testcases|time_division:i5|timer~1          ; out              ;
+; |testcases|time_division:i5|timer~2          ; |testcases|time_division:i5|timer~2          ; out              ;
+; |testcases|time_division:i5|timer~3          ; |testcases|time_division:i5|timer~3          ; out              ;
+; |testcases|time_division:i5|timer~4          ; |testcases|time_division:i5|timer~4          ; out              ;
+; |testcases|time_division:i5|timer~5          ; |testcases|time_division:i5|timer~5          ; out              ;
+; |testcases|time_division:i5|timer~6          ; |testcases|time_division:i5|timer~6          ; out              ;
+; |testcases|time_division:i5|timer~7          ; |testcases|time_division:i5|timer~7          ; out              ;
+; |testcases|time_division:i5|timer~8          ; |testcases|time_division:i5|timer~8          ; out              ;
+; |testcases|time_division:i5|timer~9          ; |testcases|time_division:i5|timer~9          ; out              ;
+; |testcases|time_division:i5|timer~10         ; |testcases|time_division:i5|timer~10         ; out              ;
+; |testcases|time_division:i5|timer~11         ; |testcases|time_division:i5|timer~11         ; out              ;
+; |testcases|time_division:i5|timer~12         ; |testcases|time_division:i5|timer~12         ; out              ;
+; |testcases|time_division:i5|timer~13         ; |testcases|time_division:i5|timer~13         ; out              ;
+; |testcases|time_division:i5|timer~14         ; |testcases|time_division:i5|timer~14         ; out              ;
+; |testcases|time_division:i5|timer~15         ; |testcases|time_division:i5|timer~15         ; out              ;
+; |testcases|time_division:i5|timer~16         ; |testcases|time_division:i5|timer~16         ; out              ;
+; |testcases|time_division:i5|timer~17         ; |testcases|time_division:i5|timer~17         ; out              ;
+; |testcases|time_division:i5|timer~18         ; |testcases|time_division:i5|timer~18         ; out              ;
+; |testcases|time_division:i5|timer~19         ; |testcases|time_division:i5|timer~19         ; out              ;
+; |testcases|time_division:i5|timer[3]         ; |testcases|time_division:i5|timer[3]         ; regout           ;
+; |testcases|time_division:i5|timer[2]         ; |testcases|time_division:i5|timer[2]         ; regout           ;
+; |testcases|time_division:i5|timer[1]         ; |testcases|time_division:i5|timer[1]         ; regout           ;
+; |testcases|time_division:i5|func_timer~0     ; |testcases|time_division:i5|func_timer~0     ; out              ;
+; |testcases|time_division:i5|func_timer~1     ; |testcases|time_division:i5|func_timer~1     ; out              ;
+; |testcases|time_division:i5|func_timer~2     ; |testcases|time_division:i5|func_timer~2     ; out              ;
+; |testcases|time_division:i5|func_timer~3     ; |testcases|time_division:i5|func_timer~3     ; out              ;
+; |testcases|time_division:i5|func_timer~4     ; |testcases|time_division:i5|func_timer~4     ; out              ;
+; |testcases|time_division:i5|func_timer~5     ; |testcases|time_division:i5|func_timer~5     ; out              ;
+; |testcases|time_division:i5|func_timer~6     ; |testcases|time_division:i5|func_timer~6     ; out              ;
+; |testcases|time_division:i5|func_timer~7     ; |testcases|time_division:i5|func_timer~7     ; out              ;
+; |testcases|time_division:i5|func_timer~8     ; |testcases|time_division:i5|func_timer~8     ; out              ;
+; |testcases|time_division:i5|func_timer~9     ; |testcases|time_division:i5|func_timer~9     ; out              ;
+; |testcases|time_division:i5|func_timer~10    ; |testcases|time_division:i5|func_timer~10    ; out              ;
+; |testcases|time_division:i5|func_timer~11    ; |testcases|time_division:i5|func_timer~11    ; out              ;
+; |testcases|time_division:i5|func_timer~12    ; |testcases|time_division:i5|func_timer~12    ; out              ;
+; |testcases|time_division:i5|func_timer~13    ; |testcases|time_division:i5|func_timer~13    ; out              ;
+; |testcases|time_division:i5|func_timer~14    ; |testcases|time_division:i5|func_timer~14    ; out              ;
+; |testcases|time_division:i5|func_timer~15    ; |testcases|time_division:i5|func_timer~15    ; out              ;
+; |testcases|time_division:i5|timer[0]         ; |testcases|time_division:i5|timer[0]         ; regout           ;
+; |testcases|time_division:i5|func_timer[19]   ; |testcases|time_division:i5|func_timer[19]   ; regout           ;
+; |testcases|time_division:i5|func_timer[18]   ; |testcases|time_division:i5|func_timer[18]   ; regout           ;
+; |testcases|time_division:i5|func_timer[17]   ; |testcases|time_division:i5|func_timer[17]   ; regout           ;
+; |testcases|time_division:i5|func_timer[16]   ; |testcases|time_division:i5|func_timer[16]   ; regout           ;
+; |testcases|time_division:i5|func_timer[15]   ; |testcases|time_division:i5|func_timer[15]   ; regout           ;
+; |testcases|time_division:i5|func_timer[14]   ; |testcases|time_division:i5|func_timer[14]   ; regout           ;
+; |testcases|time_division:i5|func_timer[13]   ; |testcases|time_division:i5|func_timer[13]   ; regout           ;
+; |testcases|time_division:i5|func_timer[12]   ; |testcases|time_division:i5|func_timer[12]   ; regout           ;
+; |testcases|time_division:i5|func_timer[11]   ; |testcases|time_division:i5|func_timer[11]   ; regout           ;
+; |testcases|time_division:i5|func_timer[10]   ; |testcases|time_division:i5|func_timer[10]   ; regout           ;
+; |testcases|time_division:i5|func_timer[9]    ; |testcases|time_division:i5|func_timer[9]    ; regout           ;
+; |testcases|time_division:i5|func_timer[8]    ; |testcases|time_division:i5|func_timer[8]    ; regout           ;
+; |testcases|time_division:i5|func_timer[7]    ; |testcases|time_division:i5|func_timer[7]    ; regout           ;
+; |testcases|time_division:i5|func_timer[6]    ; |testcases|time_division:i5|func_timer[6]    ; regout           ;
+; |testcases|time_division:i5|func_timer[5]    ; |testcases|time_division:i5|func_timer[5]    ; regout           ;
+; |testcases|time_division:i5|func_timer[4]    ; |testcases|time_division:i5|func_timer[4]    ; regout           ;
+; |testcases|time_division:i5|func_timer[3]    ; |testcases|time_division:i5|func_timer[3]    ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~1 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~1 ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~2 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector0~2 ; out0             ;
+; |testcases|time_division:i5|Decoder0~0       ; |testcases|time_division:i5|Decoder0~0       ; out0             ;
+; |testcases|time_division:i5|Decoder0~1       ; |testcases|time_division:i5|Decoder0~1       ; out0             ;
+; |testcases|time_division:i5|Decoder0~2       ; |testcases|time_division:i5|Decoder0~2       ; out0             ;
+; |testcases|time_division:i5|Decoder0~3       ; |testcases|time_division:i5|Decoder0~3       ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~0          ; |testcases|trig_ctrl:i8|LessThan0~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~1          ; |testcases|trig_ctrl:i8|LessThan0~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~2          ; |testcases|trig_ctrl:i8|LessThan0~2          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~4          ; |testcases|trig_ctrl:i8|LessThan0~4          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~8          ; |testcases|trig_ctrl:i8|LessThan0~8          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~9          ; |testcases|trig_ctrl:i8|LessThan0~9          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~17         ; |testcases|trig_ctrl:i8|LessThan0~17         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~21         ; |testcases|trig_ctrl:i8|LessThan0~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~23         ; |testcases|trig_ctrl:i8|LessThan0~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~25         ; |testcases|trig_ctrl:i8|LessThan0~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~27         ; |testcases|trig_ctrl:i8|LessThan0~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~1          ; |testcases|trig_ctrl:i8|LessThan1~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~7          ; |testcases|trig_ctrl:i8|LessThan1~7          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~15         ; |testcases|trig_ctrl:i8|LessThan1~15         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~23         ; |testcases|trig_ctrl:i8|LessThan1~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~25         ; |testcases|trig_ctrl:i8|LessThan1~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~27         ; |testcases|trig_ctrl:i8|LessThan1~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~29         ; |testcases|trig_ctrl:i8|LessThan1~29         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~5          ; |testcases|trig_ctrl:i8|LessThan2~5          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~13         ; |testcases|trig_ctrl:i8|LessThan2~13         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~21         ; |testcases|trig_ctrl:i8|LessThan2~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~23         ; |testcases|trig_ctrl:i8|LessThan2~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~25         ; |testcases|trig_ctrl:i8|LessThan2~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~27         ; |testcases|trig_ctrl:i8|LessThan2~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~0          ; |testcases|trig_ctrl:i8|LessThan3~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~3          ; |testcases|trig_ctrl:i8|LessThan3~3          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~11         ; |testcases|trig_ctrl:i8|LessThan3~11         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~19         ; |testcases|trig_ctrl:i8|LessThan3~19         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~23         ; |testcases|trig_ctrl:i8|LessThan3~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~25         ; |testcases|trig_ctrl:i8|LessThan3~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~27         ; |testcases|trig_ctrl:i8|LessThan3~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~29         ; |testcases|trig_ctrl:i8|LessThan3~29         ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~7               ; |testcases|trig_ctrl:i8|Add0~7               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~8               ; |testcases|trig_ctrl:i8|Add0~8               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~9               ; |testcases|trig_ctrl:i8|Add0~9               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~10              ; |testcases|trig_ctrl:i8|Add0~10              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~11              ; |testcases|trig_ctrl:i8|Add0~11              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~12              ; |testcases|trig_ctrl:i8|Add0~12              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~13              ; |testcases|trig_ctrl:i8|Add0~13              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~14              ; |testcases|trig_ctrl:i8|Add0~14              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~15              ; |testcases|trig_ctrl:i8|Add0~15              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~16              ; |testcases|trig_ctrl:i8|Add0~16              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~17              ; |testcases|trig_ctrl:i8|Add0~17              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~18              ; |testcases|trig_ctrl:i8|Add0~18              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~19              ; |testcases|trig_ctrl:i8|Add0~19              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~20              ; |testcases|trig_ctrl:i8|Add0~20              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~21              ; |testcases|trig_ctrl:i8|Add0~21              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~22              ; |testcases|trig_ctrl:i8|Add0~22              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~23              ; |testcases|trig_ctrl:i8|Add0~23              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~24              ; |testcases|trig_ctrl:i8|Add0~24              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~25              ; |testcases|trig_ctrl:i8|Add0~25              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~26              ; |testcases|trig_ctrl:i8|Add0~26              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~27              ; |testcases|trig_ctrl:i8|Add0~27              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~28              ; |testcases|trig_ctrl:i8|Add0~28              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~29              ; |testcases|trig_ctrl:i8|Add0~29              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~30              ; |testcases|trig_ctrl:i8|Add0~30              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~31              ; |testcases|trig_ctrl:i8|Add0~31              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~32              ; |testcases|trig_ctrl:i8|Add0~32              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~33              ; |testcases|trig_ctrl:i8|Add0~33              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~34              ; |testcases|trig_ctrl:i8|Add0~34              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~35              ; |testcases|trig_ctrl:i8|Add0~35              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~36              ; |testcases|trig_ctrl:i8|Add0~36              ; out0             ;
+; |testcases|time_division:i5|Add0~0           ; |testcases|time_division:i5|Add0~0           ; out0             ;
+; |testcases|time_division:i5|Add0~1           ; |testcases|time_division:i5|Add0~1           ; out0             ;
+; |testcases|time_division:i5|Add0~2           ; |testcases|time_division:i5|Add0~2           ; out0             ;
+; |testcases|time_division:i5|Add0~3           ; |testcases|time_division:i5|Add0~3           ; out0             ;
+; |testcases|time_division:i5|Add0~4           ; |testcases|time_division:i5|Add0~4           ; out0             ;
+; |testcases|time_division:i5|Add0~5           ; |testcases|time_division:i5|Add0~5           ; out0             ;
+; |testcases|time_division:i5|Add0~6           ; |testcases|time_division:i5|Add0~6           ; out0             ;
+; |testcases|time_division:i5|Add0~7           ; |testcases|time_division:i5|Add0~7           ; out0             ;
+; |testcases|time_division:i5|Add0~8           ; |testcases|time_division:i5|Add0~8           ; out0             ;
+; |testcases|time_division:i5|Add0~9           ; |testcases|time_division:i5|Add0~9           ; out0             ;
+; |testcases|time_division:i5|Add0~10          ; |testcases|time_division:i5|Add0~10          ; out0             ;
+; |testcases|time_division:i5|Add0~11          ; |testcases|time_division:i5|Add0~11          ; out0             ;
+; |testcases|time_division:i5|Add0~12          ; |testcases|time_division:i5|Add0~12          ; out0             ;
+; |testcases|time_division:i5|Add0~13          ; |testcases|time_division:i5|Add0~13          ; out0             ;
+; |testcases|time_division:i5|Add0~14          ; |testcases|time_division:i5|Add0~14          ; out0             ;
+; |testcases|time_division:i5|Add0~15          ; |testcases|time_division:i5|Add0~15          ; out0             ;
+; |testcases|time_division:i5|Add0~16          ; |testcases|time_division:i5|Add0~16          ; out0             ;
+; |testcases|time_division:i5|Add0~17          ; |testcases|time_division:i5|Add0~17          ; out0             ;
+; |testcases|time_division:i5|Add0~18          ; |testcases|time_division:i5|Add0~18          ; out0             ;
+; |testcases|time_division:i5|Add0~19          ; |testcases|time_division:i5|Add0~19          ; out0             ;
+; |testcases|time_division:i5|Add0~20          ; |testcases|time_division:i5|Add0~20          ; out0             ;
+; |testcases|time_division:i5|Add0~21          ; |testcases|time_division:i5|Add0~21          ; out0             ;
+; |testcases|time_division:i5|Add0~22          ; |testcases|time_division:i5|Add0~22          ; out0             ;
+; |testcases|time_division:i5|Add0~23          ; |testcases|time_division:i5|Add0~23          ; out0             ;
+; |testcases|time_division:i5|Add0~24          ; |testcases|time_division:i5|Add0~24          ; out0             ;
+; |testcases|time_division:i5|Add0~25          ; |testcases|time_division:i5|Add0~25          ; out0             ;
+; |testcases|time_division:i5|Add0~26          ; |testcases|time_division:i5|Add0~26          ; out0             ;
+; |testcases|time_division:i5|Add0~27          ; |testcases|time_division:i5|Add0~27          ; out0             ;
+; |testcases|time_division:i5|Add0~28          ; |testcases|time_division:i5|Add0~28          ; out0             ;
+; |testcases|time_division:i5|Add0~29          ; |testcases|time_division:i5|Add0~29          ; out0             ;
+; |testcases|time_division:i5|Add0~30          ; |testcases|time_division:i5|Add0~30          ; out0             ;
+; |testcases|time_division:i5|Add0~31          ; |testcases|time_division:i5|Add0~31          ; out0             ;
+; |testcases|time_division:i5|Add0~32          ; |testcases|time_division:i5|Add0~32          ; out0             ;
+; |testcases|time_division:i5|Add0~33          ; |testcases|time_division:i5|Add0~33          ; out0             ;
+; |testcases|time_division:i5|Add0~34          ; |testcases|time_division:i5|Add0~34          ; out0             ;
+; |testcases|time_division:i5|Add0~35          ; |testcases|time_division:i5|Add0~35          ; out0             ;
+; |testcases|time_division:i5|Add0~36          ; |testcases|time_division:i5|Add0~36          ; out0             ;
+; |testcases|time_division:i5|Add1~5           ; |testcases|time_division:i5|Add1~5           ; out0             ;
+; |testcases|time_division:i5|Add1~6           ; |testcases|time_division:i5|Add1~6           ; out0             ;
+; |testcases|time_division:i5|Add1~7           ; |testcases|time_division:i5|Add1~7           ; out0             ;
+; |testcases|time_division:i5|Add1~8           ; |testcases|time_division:i5|Add1~8           ; out0             ;
+; |testcases|time_division:i5|Add1~9           ; |testcases|time_division:i5|Add1~9           ; out0             ;
+; |testcases|time_division:i5|Add1~10          ; |testcases|time_division:i5|Add1~10          ; out0             ;
+; |testcases|time_division:i5|Add1~11          ; |testcases|time_division:i5|Add1~11          ; out0             ;
+; |testcases|time_division:i5|Add1~12          ; |testcases|time_division:i5|Add1~12          ; out0             ;
+; |testcases|time_division:i5|Add1~13          ; |testcases|time_division:i5|Add1~13          ; out0             ;
+; |testcases|time_division:i5|Add1~14          ; |testcases|time_division:i5|Add1~14          ; out0             ;
+; |testcases|time_division:i5|Add1~15          ; |testcases|time_division:i5|Add1~15          ; out0             ;
+; |testcases|time_division:i5|Add1~16          ; |testcases|time_division:i5|Add1~16          ; out0             ;
+; |testcases|time_division:i5|Add1~17          ; |testcases|time_division:i5|Add1~17          ; out0             ;
+; |testcases|time_division:i5|Add1~18          ; |testcases|time_division:i5|Add1~18          ; out0             ;
+; |testcases|time_division:i5|Add1~19          ; |testcases|time_division:i5|Add1~19          ; out0             ;
+; |testcases|time_division:i5|Add1~20          ; |testcases|time_division:i5|Add1~20          ; out0             ;
+; |testcases|time_division:i5|Add1~21          ; |testcases|time_division:i5|Add1~21          ; out0             ;
+; |testcases|time_division:i5|Add1~22          ; |testcases|time_division:i5|Add1~22          ; out0             ;
+; |testcases|time_division:i5|Add1~23          ; |testcases|time_division:i5|Add1~23          ; out0             ;
+; |testcases|time_division:i5|Add1~24          ; |testcases|time_division:i5|Add1~24          ; out0             ;
+; |testcases|time_division:i5|Add1~25          ; |testcases|time_division:i5|Add1~25          ; out0             ;
+; |testcases|time_division:i5|Add1~26          ; |testcases|time_division:i5|Add1~26          ; out0             ;
+; |testcases|time_division:i5|Add1~27          ; |testcases|time_division:i5|Add1~27          ; out0             ;
+; |testcases|time_division:i5|Add1~28          ; |testcases|time_division:i5|Add1~28          ; out0             ;
+; |testcases|time_division:i5|Add1~29          ; |testcases|time_division:i5|Add1~29          ; out0             ;
+; |testcases|time_division:i5|Add1~30          ; |testcases|time_division:i5|Add1~30          ; out0             ;
+; |testcases|time_division:i5|Add1~31          ; |testcases|time_division:i5|Add1~31          ; out0             ;
+; |testcases|time_division:i5|Add1~32          ; |testcases|time_division:i5|Add1~32          ; out0             ;
+; |testcases|time_division:i5|Add1~33          ; |testcases|time_division:i5|Add1~33          ; out0             ;
+; |testcases|time_division:i5|Add1~34          ; |testcases|time_division:i5|Add1~34          ; out0             ;
+; |testcases|time_division:i5|Add1~35          ; |testcases|time_division:i5|Add1~35          ; out0             ;
+; |testcases|time_division:i5|Add1~36          ; |testcases|time_division:i5|Add1~36          ; out0             ;
+; |testcases|time_division:i5|Add2~0           ; |testcases|time_division:i5|Add2~0           ; out0             ;
+; |testcases|time_division:i5|Add2~1           ; |testcases|time_division:i5|Add2~1           ; out0             ;
+; |testcases|time_division:i5|Add2~2           ; |testcases|time_division:i5|Add2~2           ; out0             ;
+; |testcases|time_division:i5|Add2~3           ; |testcases|time_division:i5|Add2~3           ; out0             ;
+; |testcases|time_division:i5|Add2~4           ; |testcases|time_division:i5|Add2~4           ; out0             ;
+; |testcases|time_division:i5|Add2~5           ; |testcases|time_division:i5|Add2~5           ; out0             ;
+; |testcases|time_division:i5|Add2~6           ; |testcases|time_division:i5|Add2~6           ; out0             ;
+; |testcases|time_division:i5|Add2~7           ; |testcases|time_division:i5|Add2~7           ; out0             ;
+; |testcases|time_division:i5|Add2~8           ; |testcases|time_division:i5|Add2~8           ; out0             ;
+; |testcases|wr_adr_gen:i6|Equal0~0            ; |testcases|wr_adr_gen:i6|Equal0~0            ; out0             ;
+; |testcases|wr_adr_gen:i6|Equal1~0            ; |testcases|wr_adr_gen:i6|Equal1~0            ; out0             ;
+; |testcases|time_division:i5|Equal0~0         ; |testcases|time_division:i5|Equal0~0         ; out0             ;
+; |testcases|time_division:i5|Equal0~1         ; |testcases|time_division:i5|Equal0~1         ; out0             ;
+; |testcases|time_division:i5|Equal0~2         ; |testcases|time_division:i5|Equal0~2         ; out0             ;
+; |testcases|time_division:i5|Equal0~3         ; |testcases|time_division:i5|Equal0~3         ; out0             ;
+; |testcases|time_division:i5|Equal0~4         ; |testcases|time_division:i5|Equal0~4         ; out0             ;
+; |testcases|time_division:i5|Equal0~5         ; |testcases|time_division:i5|Equal0~5         ; out0             ;
+; |testcases|time_division:i5|Equal0~6         ; |testcases|time_division:i5|Equal0~6         ; out0             ;
+; |testcases|time_division:i5|Equal0~7         ; |testcases|time_division:i5|Equal0~7         ; out0             ;
+; |testcases|time_division:i5|Equal0~8         ; |testcases|time_division:i5|Equal0~8         ; out0             ;
+; |testcases|time_division:i5|Equal0~9         ; |testcases|time_division:i5|Equal0~9         ; out0             ;
+; |testcases|time_division:i5|Equal0~10        ; |testcases|time_division:i5|Equal0~10        ; out0             ;
+; |testcases|time_division:i5|Equal0~11        ; |testcases|time_division:i5|Equal0~11        ; out0             ;
+; |testcases|time_division:i5|Equal0~12        ; |testcases|time_division:i5|Equal0~12        ; out0             ;
+; |testcases|time_division:i5|Equal0~13        ; |testcases|time_division:i5|Equal0~13        ; out0             ;
+; |testcases|time_division:i5|Equal0~14        ; |testcases|time_division:i5|Equal0~14        ; out0             ;
+; |testcases|time_division:i5|Equal0~15        ; |testcases|time_division:i5|Equal0~15        ; out0             ;
+; |testcases|time_division:i5|Equal0~16        ; |testcases|time_division:i5|Equal0~16        ; out0             ;
+; |testcases|time_division:i5|Equal0~17        ; |testcases|time_division:i5|Equal0~17        ; out0             ;
+; |testcases|time_division:i5|Equal0~18        ; |testcases|time_division:i5|Equal0~18        ; out0             ;
+; |testcases|time_division:i5|Equal0~19        ; |testcases|time_division:i5|Equal0~19        ; out0             ;
+; |testcases|time_division:i5|Equal0~20        ; |testcases|time_division:i5|Equal0~20        ; out0             ;
+; |testcases|time_division:i5|Equal1~0         ; |testcases|time_division:i5|Equal1~0         ; out0             ;
+; |testcases|time_division:i5|Equal1~1         ; |testcases|time_division:i5|Equal1~1         ; out0             ;
+; |testcases|time_division:i5|Equal1~2         ; |testcases|time_division:i5|Equal1~2         ; out0             ;
+; |testcases|time_division:i5|Equal1~3         ; |testcases|time_division:i5|Equal1~3         ; out0             ;
+; |testcases|time_division:i5|Equal1~4         ; |testcases|time_division:i5|Equal1~4         ; out0             ;
+; |testcases|time_division:i5|Equal1~5         ; |testcases|time_division:i5|Equal1~5         ; out0             ;
+; |testcases|time_division:i5|Equal1~6         ; |testcases|time_division:i5|Equal1~6         ; out0             ;
+; |testcases|time_division:i5|Equal1~7         ; |testcases|time_division:i5|Equal1~7         ; out0             ;
+; |testcases|time_division:i5|Equal1~8         ; |testcases|time_division:i5|Equal1~8         ; out0             ;
+; |testcases|time_division:i5|Equal1~9         ; |testcases|time_division:i5|Equal1~9         ; out0             ;
+; |testcases|time_division:i5|Equal1~10        ; |testcases|time_division:i5|Equal1~10        ; out0             ;
+; |testcases|time_division:i5|Equal1~11        ; |testcases|time_division:i5|Equal1~11        ; out0             ;
+; |testcases|time_division:i5|Equal1~12        ; |testcases|time_division:i5|Equal1~12        ; out0             ;
+; |testcases|time_division:i5|Equal1~13        ; |testcases|time_division:i5|Equal1~13        ; out0             ;
+; |testcases|time_division:i5|Equal1~14        ; |testcases|time_division:i5|Equal1~14        ; out0             ;
+; |testcases|time_division:i5|Equal1~15        ; |testcases|time_division:i5|Equal1~15        ; out0             ;
+; |testcases|time_division:i5|Equal1~16        ; |testcases|time_division:i5|Equal1~16        ; out0             ;
+; |testcases|time_division:i5|Equal1~17        ; |testcases|time_division:i5|Equal1~17        ; out0             ;
+; |testcases|time_division:i5|Equal1~18        ; |testcases|time_division:i5|Equal1~18        ; out0             ;
+; |testcases|time_division:i5|Equal1~19        ; |testcases|time_division:i5|Equal1~19        ; out0             ;
+; |testcases|time_division:i5|Equal1~20        ; |testcases|time_division:i5|Equal1~20        ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |testcases|slope                             ; |testcases|slope                             ; out              ;
+; |testcases|mode                              ; |testcases|mode                              ; out              ;
+; |testcases|level[0]                          ; |testcases|level[0]                          ; out              ;
+; |testcases|level[1]                          ; |testcases|level[1]                          ; out              ;
+; |testcases|level[2]                          ; |testcases|level[2]                          ; out              ;
+; |testcases|level[3]                          ; |testcases|level[3]                          ; out              ;
+; |testcases|level[4]                          ; |testcases|level[4]                          ; out              ;
+; |testcases|level[5]                          ; |testcases|level[5]                          ; out              ;
+; |testcases|level[6]                          ; |testcases|level[6]                          ; out              ;
+; |testcases|level[7]                          ; |testcases|level[7]                          ; out              ;
+; |testcases|time_per_div[0]                   ; |testcases|time_per_div[0]                   ; out              ;
+; |testcases|time_per_div[1]                   ; |testcases|time_per_div[1]                   ; out              ;
+; |testcases|adc_sample[6]                     ; |testcases|adc_sample[6]                     ; out              ;
+; |testcases|adc_sample[7]                     ; |testcases|adc_sample[7]                     ; out              ;
+; |testcases|rst_trig                          ; |testcases|rst_trig                          ; pin_out          ;
+; |testcases|wren                              ; |testcases|wren                              ; pin_out          ;
+; |testcases|trigger                           ; |testcases|trigger                           ; pin_out          ;
+; |testcases|wraddress[8]                      ; |testcases|wraddress[8]                      ; pin_out          ;
+; |testcases|wraddress[9]                      ; |testcases|wraddress[9]                      ; pin_out          ;
+; |testcases|trig_ctrl:i8|asghar[6]            ; |testcases|trig_ctrl:i8|asghar[6]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[5]            ; |testcases|trig_ctrl:i8|asghar[5]            ; regout           ;
+; |testcases|trig_ctrl:i8|prev[7]              ; |testcases|trig_ctrl:i8|prev[7]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev[6]              ; |testcases|trig_ctrl:i8|prev[6]              ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[7]             ; |testcases|trig_ctrl:i8|prev2[7]             ; regout           ;
+; |testcases|trig_ctrl:i8|prev2[6]             ; |testcases|trig_ctrl:i8|prev2[6]             ; regout           ;
+; |testcases|trig_ctrl:i8|comb~2               ; |testcases|trig_ctrl:i8|comb~2               ; out0             ;
+; |testcases|trig_ctrl:i8|comb~3               ; |testcases|trig_ctrl:i8|comb~3               ; out0             ;
+; |testcases|trig_ctrl:i8|asghar[4]            ; |testcases|trig_ctrl:i8|asghar[4]            ; regout           ;
+; |testcases|trig_ctrl:i8|trig_en~0            ; |testcases|trig_ctrl:i8|trig_en~0            ; out0             ;
+; |testcases|trig_ctrl:i8|asghar~0             ; |testcases|trig_ctrl:i8|asghar~0             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~1             ; |testcases|trig_ctrl:i8|asghar~1             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~2             ; |testcases|trig_ctrl:i8|asghar~2             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~3             ; |testcases|trig_ctrl:i8|asghar~3             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~4             ; |testcases|trig_ctrl:i8|asghar~4             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~5             ; |testcases|trig_ctrl:i8|asghar~5             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~6             ; |testcases|trig_ctrl:i8|asghar~6             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~7             ; |testcases|trig_ctrl:i8|asghar~7             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~8             ; |testcases|trig_ctrl:i8|asghar~8             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~9             ; |testcases|trig_ctrl:i8|asghar~9             ; out              ;
+; |testcases|trig_ctrl:i8|asghar~10            ; |testcases|trig_ctrl:i8|asghar~10            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~11            ; |testcases|trig_ctrl:i8|asghar~11            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~12            ; |testcases|trig_ctrl:i8|asghar~12            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~13            ; |testcases|trig_ctrl:i8|asghar~13            ; out              ;
+; |testcases|trig_ctrl:i8|asghar~14            ; |testcases|trig_ctrl:i8|asghar~14            ; out              ;
+; |testcases|trig_ctrl:i8|trigger              ; |testcases|trig_ctrl:i8|trigger              ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[7]            ; |testcases|trig_ctrl:i8|asghar[7]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[8]            ; |testcases|trig_ctrl:i8|asghar[8]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[9]            ; |testcases|trig_ctrl:i8|asghar[9]            ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[10]           ; |testcases|trig_ctrl:i8|asghar[10]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[11]           ; |testcases|trig_ctrl:i8|asghar[11]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[12]           ; |testcases|trig_ctrl:i8|asghar[12]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[13]           ; |testcases|trig_ctrl:i8|asghar[13]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[14]           ; |testcases|trig_ctrl:i8|asghar[14]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[15]           ; |testcases|trig_ctrl:i8|asghar[15]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[16]           ; |testcases|trig_ctrl:i8|asghar[16]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[17]           ; |testcases|trig_ctrl:i8|asghar[17]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[18]           ; |testcases|trig_ctrl:i8|asghar[18]           ; regout           ;
+; |testcases|trig_ctrl:i8|asghar[19]           ; |testcases|trig_ctrl:i8|asghar[19]           ; regout           ;
+; |testcases|wr_adr_gen:i6|count[9]            ; |testcases|wr_adr_gen:i6|count[9]            ; regout           ;
+; |testcases|wr_adr_gen:i6|count[8]            ; |testcases|wr_adr_gen:i6|count[8]            ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.01       ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.01       ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ns.10       ; |testcases|wr_adr_gen:i6|ctrl:cu|ns.10       ; out              ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10       ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10       ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|wren        ; |testcases|wr_adr_gen:i6|ctrl:cu|wren        ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10~0     ; |testcases|wr_adr_gen:i6|ctrl:cu|ps.10~0     ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|rst_trig    ; |testcases|wr_adr_gen:i6|ctrl:cu|rst_trig    ; out0             ;
+; |testcases|time_division:i5|timer[19]        ; |testcases|time_division:i5|timer[19]        ; regout           ;
+; |testcases|time_division:i5|timer[18]        ; |testcases|time_division:i5|timer[18]        ; regout           ;
+; |testcases|time_division:i5|timer[17]        ; |testcases|time_division:i5|timer[17]        ; regout           ;
+; |testcases|time_division:i5|timer[16]        ; |testcases|time_division:i5|timer[16]        ; regout           ;
+; |testcases|time_division:i5|timer[15]        ; |testcases|time_division:i5|timer[15]        ; regout           ;
+; |testcases|time_division:i5|timer[14]        ; |testcases|time_division:i5|timer[14]        ; regout           ;
+; |testcases|time_division:i5|timer[13]        ; |testcases|time_division:i5|timer[13]        ; regout           ;
+; |testcases|time_division:i5|timer[12]        ; |testcases|time_division:i5|timer[12]        ; regout           ;
+; |testcases|time_division:i5|timer[11]        ; |testcases|time_division:i5|timer[11]        ; regout           ;
+; |testcases|time_division:i5|timer[10]        ; |testcases|time_division:i5|timer[10]        ; regout           ;
+; |testcases|time_division:i5|timer[9]         ; |testcases|time_division:i5|timer[9]         ; regout           ;
+; |testcases|time_division:i5|timer[8]         ; |testcases|time_division:i5|timer[8]         ; regout           ;
+; |testcases|time_division:i5|timer[7]         ; |testcases|time_division:i5|timer[7]         ; regout           ;
+; |testcases|time_division:i5|timer[6]         ; |testcases|time_division:i5|timer[6]         ; regout           ;
+; |testcases|time_division:i5|timer[5]         ; |testcases|time_division:i5|timer[5]         ; regout           ;
+; |testcases|time_division:i5|timer[4]         ; |testcases|time_division:i5|timer[4]         ; regout           ;
+; |testcases|time_division:i5|always0~0        ; |testcases|time_division:i5|always0~0        ; out0             ;
+; |testcases|time_division:i5|timer~0          ; |testcases|time_division:i5|timer~0          ; out              ;
+; |testcases|time_division:i5|timer~1          ; |testcases|time_division:i5|timer~1          ; out              ;
+; |testcases|time_division:i5|timer~2          ; |testcases|time_division:i5|timer~2          ; out              ;
+; |testcases|time_division:i5|timer~3          ; |testcases|time_division:i5|timer~3          ; out              ;
+; |testcases|time_division:i5|timer~4          ; |testcases|time_division:i5|timer~4          ; out              ;
+; |testcases|time_division:i5|timer~5          ; |testcases|time_division:i5|timer~5          ; out              ;
+; |testcases|time_division:i5|timer~6          ; |testcases|time_division:i5|timer~6          ; out              ;
+; |testcases|time_division:i5|timer~7          ; |testcases|time_division:i5|timer~7          ; out              ;
+; |testcases|time_division:i5|timer~8          ; |testcases|time_division:i5|timer~8          ; out              ;
+; |testcases|time_division:i5|timer~9          ; |testcases|time_division:i5|timer~9          ; out              ;
+; |testcases|time_division:i5|timer~10         ; |testcases|time_division:i5|timer~10         ; out              ;
+; |testcases|time_division:i5|timer~11         ; |testcases|time_division:i5|timer~11         ; out              ;
+; |testcases|time_division:i5|timer~12         ; |testcases|time_division:i5|timer~12         ; out              ;
+; |testcases|time_division:i5|timer~13         ; |testcases|time_division:i5|timer~13         ; out              ;
+; |testcases|time_division:i5|timer~14         ; |testcases|time_division:i5|timer~14         ; out              ;
+; |testcases|time_division:i5|timer~15         ; |testcases|time_division:i5|timer~15         ; out              ;
+; |testcases|time_division:i5|timer~16         ; |testcases|time_division:i5|timer~16         ; out              ;
+; |testcases|time_division:i5|timer~17         ; |testcases|time_division:i5|timer~17         ; out              ;
+; |testcases|time_division:i5|timer~18         ; |testcases|time_division:i5|timer~18         ; out              ;
+; |testcases|time_division:i5|timer~19         ; |testcases|time_division:i5|timer~19         ; out              ;
+; |testcases|time_division:i5|timer[3]         ; |testcases|time_division:i5|timer[3]         ; regout           ;
+; |testcases|time_division:i5|timer[2]         ; |testcases|time_division:i5|timer[2]         ; regout           ;
+; |testcases|time_division:i5|timer[1]         ; |testcases|time_division:i5|timer[1]         ; regout           ;
+; |testcases|time_division:i5|func_timer~0     ; |testcases|time_division:i5|func_timer~0     ; out              ;
+; |testcases|time_division:i5|func_timer~1     ; |testcases|time_division:i5|func_timer~1     ; out              ;
+; |testcases|time_division:i5|func_timer~2     ; |testcases|time_division:i5|func_timer~2     ; out              ;
+; |testcases|time_division:i5|func_timer~3     ; |testcases|time_division:i5|func_timer~3     ; out              ;
+; |testcases|time_division:i5|func_timer~4     ; |testcases|time_division:i5|func_timer~4     ; out              ;
+; |testcases|time_division:i5|func_timer~5     ; |testcases|time_division:i5|func_timer~5     ; out              ;
+; |testcases|time_division:i5|func_timer~6     ; |testcases|time_division:i5|func_timer~6     ; out              ;
+; |testcases|time_division:i5|func_timer~7     ; |testcases|time_division:i5|func_timer~7     ; out              ;
+; |testcases|time_division:i5|func_timer~8     ; |testcases|time_division:i5|func_timer~8     ; out              ;
+; |testcases|time_division:i5|func_timer~9     ; |testcases|time_division:i5|func_timer~9     ; out              ;
+; |testcases|time_division:i5|func_timer~10    ; |testcases|time_division:i5|func_timer~10    ; out              ;
+; |testcases|time_division:i5|func_timer~11    ; |testcases|time_division:i5|func_timer~11    ; out              ;
+; |testcases|time_division:i5|func_timer~12    ; |testcases|time_division:i5|func_timer~12    ; out              ;
+; |testcases|time_division:i5|func_timer~13    ; |testcases|time_division:i5|func_timer~13    ; out              ;
+; |testcases|time_division:i5|func_timer~14    ; |testcases|time_division:i5|func_timer~14    ; out              ;
+; |testcases|time_division:i5|func_timer~15    ; |testcases|time_division:i5|func_timer~15    ; out              ;
+; |testcases|time_division:i5|timer[0]         ; |testcases|time_division:i5|timer[0]         ; regout           ;
+; |testcases|time_division:i5|func_timer[19]   ; |testcases|time_division:i5|func_timer[19]   ; regout           ;
+; |testcases|time_division:i5|func_timer[18]   ; |testcases|time_division:i5|func_timer[18]   ; regout           ;
+; |testcases|time_division:i5|func_timer[17]   ; |testcases|time_division:i5|func_timer[17]   ; regout           ;
+; |testcases|time_division:i5|func_timer[16]   ; |testcases|time_division:i5|func_timer[16]   ; regout           ;
+; |testcases|time_division:i5|func_timer[15]   ; |testcases|time_division:i5|func_timer[15]   ; regout           ;
+; |testcases|time_division:i5|func_timer[14]   ; |testcases|time_division:i5|func_timer[14]   ; regout           ;
+; |testcases|time_division:i5|func_timer[13]   ; |testcases|time_division:i5|func_timer[13]   ; regout           ;
+; |testcases|time_division:i5|func_timer[12]   ; |testcases|time_division:i5|func_timer[12]   ; regout           ;
+; |testcases|time_division:i5|func_timer[11]   ; |testcases|time_division:i5|func_timer[11]   ; regout           ;
+; |testcases|time_division:i5|func_timer[10]   ; |testcases|time_division:i5|func_timer[10]   ; regout           ;
+; |testcases|time_division:i5|func_timer[9]    ; |testcases|time_division:i5|func_timer[9]    ; regout           ;
+; |testcases|time_division:i5|func_timer[8]    ; |testcases|time_division:i5|func_timer[8]    ; regout           ;
+; |testcases|time_division:i5|func_timer[7]    ; |testcases|time_division:i5|func_timer[7]    ; regout           ;
+; |testcases|time_division:i5|func_timer[6]    ; |testcases|time_division:i5|func_timer[6]    ; regout           ;
+; |testcases|time_division:i5|func_timer[5]    ; |testcases|time_division:i5|func_timer[5]    ; regout           ;
+; |testcases|time_division:i5|func_timer[4]    ; |testcases|time_division:i5|func_timer[4]    ; regout           ;
+; |testcases|time_division:i5|func_timer[3]    ; |testcases|time_division:i5|func_timer[3]    ; regout           ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~0 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~0 ; out0             ;
+; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~1 ; |testcases|wr_adr_gen:i6|ctrl:cu|Selector1~1 ; out0             ;
+; |testcases|time_division:i5|Decoder0~0       ; |testcases|time_division:i5|Decoder0~0       ; out0             ;
+; |testcases|time_division:i5|Decoder0~1       ; |testcases|time_division:i5|Decoder0~1       ; out0             ;
+; |testcases|time_division:i5|Decoder0~2       ; |testcases|time_division:i5|Decoder0~2       ; out0             ;
+; |testcases|time_division:i5|Decoder0~3       ; |testcases|time_division:i5|Decoder0~3       ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~0          ; |testcases|trig_ctrl:i8|LessThan0~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~1          ; |testcases|trig_ctrl:i8|LessThan0~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~2          ; |testcases|trig_ctrl:i8|LessThan0~2          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~4          ; |testcases|trig_ctrl:i8|LessThan0~4          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~8          ; |testcases|trig_ctrl:i8|LessThan0~8          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~9          ; |testcases|trig_ctrl:i8|LessThan0~9          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~17         ; |testcases|trig_ctrl:i8|LessThan0~17         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~21         ; |testcases|trig_ctrl:i8|LessThan0~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~23         ; |testcases|trig_ctrl:i8|LessThan0~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~25         ; |testcases|trig_ctrl:i8|LessThan0~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan0~27         ; |testcases|trig_ctrl:i8|LessThan0~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~1          ; |testcases|trig_ctrl:i8|LessThan1~1          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~7          ; |testcases|trig_ctrl:i8|LessThan1~7          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~15         ; |testcases|trig_ctrl:i8|LessThan1~15         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~23         ; |testcases|trig_ctrl:i8|LessThan1~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~25         ; |testcases|trig_ctrl:i8|LessThan1~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~27         ; |testcases|trig_ctrl:i8|LessThan1~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan1~29         ; |testcases|trig_ctrl:i8|LessThan1~29         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~5          ; |testcases|trig_ctrl:i8|LessThan2~5          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~13         ; |testcases|trig_ctrl:i8|LessThan2~13         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~21         ; |testcases|trig_ctrl:i8|LessThan2~21         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~23         ; |testcases|trig_ctrl:i8|LessThan2~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~25         ; |testcases|trig_ctrl:i8|LessThan2~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan2~27         ; |testcases|trig_ctrl:i8|LessThan2~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~0          ; |testcases|trig_ctrl:i8|LessThan3~0          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~3          ; |testcases|trig_ctrl:i8|LessThan3~3          ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~11         ; |testcases|trig_ctrl:i8|LessThan3~11         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~19         ; |testcases|trig_ctrl:i8|LessThan3~19         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~23         ; |testcases|trig_ctrl:i8|LessThan3~23         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~25         ; |testcases|trig_ctrl:i8|LessThan3~25         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~27         ; |testcases|trig_ctrl:i8|LessThan3~27         ; out0             ;
+; |testcases|trig_ctrl:i8|LessThan3~29         ; |testcases|trig_ctrl:i8|LessThan3~29         ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~7               ; |testcases|trig_ctrl:i8|Add0~7               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~8               ; |testcases|trig_ctrl:i8|Add0~8               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~9               ; |testcases|trig_ctrl:i8|Add0~9               ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~10              ; |testcases|trig_ctrl:i8|Add0~10              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~11              ; |testcases|trig_ctrl:i8|Add0~11              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~12              ; |testcases|trig_ctrl:i8|Add0~12              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~13              ; |testcases|trig_ctrl:i8|Add0~13              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~14              ; |testcases|trig_ctrl:i8|Add0~14              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~15              ; |testcases|trig_ctrl:i8|Add0~15              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~16              ; |testcases|trig_ctrl:i8|Add0~16              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~17              ; |testcases|trig_ctrl:i8|Add0~17              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~18              ; |testcases|trig_ctrl:i8|Add0~18              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~19              ; |testcases|trig_ctrl:i8|Add0~19              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~20              ; |testcases|trig_ctrl:i8|Add0~20              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~21              ; |testcases|trig_ctrl:i8|Add0~21              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~22              ; |testcases|trig_ctrl:i8|Add0~22              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~23              ; |testcases|trig_ctrl:i8|Add0~23              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~24              ; |testcases|trig_ctrl:i8|Add0~24              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~25              ; |testcases|trig_ctrl:i8|Add0~25              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~26              ; |testcases|trig_ctrl:i8|Add0~26              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~27              ; |testcases|trig_ctrl:i8|Add0~27              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~28              ; |testcases|trig_ctrl:i8|Add0~28              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~29              ; |testcases|trig_ctrl:i8|Add0~29              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~30              ; |testcases|trig_ctrl:i8|Add0~30              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~31              ; |testcases|trig_ctrl:i8|Add0~31              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~32              ; |testcases|trig_ctrl:i8|Add0~32              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~33              ; |testcases|trig_ctrl:i8|Add0~33              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~34              ; |testcases|trig_ctrl:i8|Add0~34              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~35              ; |testcases|trig_ctrl:i8|Add0~35              ; out0             ;
+; |testcases|trig_ctrl:i8|Add0~36              ; |testcases|trig_ctrl:i8|Add0~36              ; out0             ;
+; |testcases|time_division:i5|Add0~0           ; |testcases|time_division:i5|Add0~0           ; out0             ;
+; |testcases|time_division:i5|Add0~1           ; |testcases|time_division:i5|Add0~1           ; out0             ;
+; |testcases|time_division:i5|Add0~2           ; |testcases|time_division:i5|Add0~2           ; out0             ;
+; |testcases|time_division:i5|Add0~3           ; |testcases|time_division:i5|Add0~3           ; out0             ;
+; |testcases|time_division:i5|Add0~4           ; |testcases|time_division:i5|Add0~4           ; out0             ;
+; |testcases|time_division:i5|Add0~5           ; |testcases|time_division:i5|Add0~5           ; out0             ;
+; |testcases|time_division:i5|Add0~6           ; |testcases|time_division:i5|Add0~6           ; out0             ;
+; |testcases|time_division:i5|Add0~7           ; |testcases|time_division:i5|Add0~7           ; out0             ;
+; |testcases|time_division:i5|Add0~8           ; |testcases|time_division:i5|Add0~8           ; out0             ;
+; |testcases|time_division:i5|Add0~9           ; |testcases|time_division:i5|Add0~9           ; out0             ;
+; |testcases|time_division:i5|Add0~10          ; |testcases|time_division:i5|Add0~10          ; out0             ;
+; |testcases|time_division:i5|Add0~11          ; |testcases|time_division:i5|Add0~11          ; out0             ;
+; |testcases|time_division:i5|Add0~12          ; |testcases|time_division:i5|Add0~12          ; out0             ;
+; |testcases|time_division:i5|Add0~13          ; |testcases|time_division:i5|Add0~13          ; out0             ;
+; |testcases|time_division:i5|Add0~14          ; |testcases|time_division:i5|Add0~14          ; out0             ;
+; |testcases|time_division:i5|Add0~15          ; |testcases|time_division:i5|Add0~15          ; out0             ;
+; |testcases|time_division:i5|Add0~16          ; |testcases|time_division:i5|Add0~16          ; out0             ;
+; |testcases|time_division:i5|Add0~17          ; |testcases|time_division:i5|Add0~17          ; out0             ;
+; |testcases|time_division:i5|Add0~18          ; |testcases|time_division:i5|Add0~18          ; out0             ;
+; |testcases|time_division:i5|Add0~19          ; |testcases|time_division:i5|Add0~19          ; out0             ;
+; |testcases|time_division:i5|Add0~20          ; |testcases|time_division:i5|Add0~20          ; out0             ;
+; |testcases|time_division:i5|Add0~21          ; |testcases|time_division:i5|Add0~21          ; out0             ;
+; |testcases|time_division:i5|Add0~22          ; |testcases|time_division:i5|Add0~22          ; out0             ;
+; |testcases|time_division:i5|Add0~23          ; |testcases|time_division:i5|Add0~23          ; out0             ;
+; |testcases|time_division:i5|Add0~24          ; |testcases|time_division:i5|Add0~24          ; out0             ;
+; |testcases|time_division:i5|Add0~25          ; |testcases|time_division:i5|Add0~25          ; out0             ;
+; |testcases|time_division:i5|Add0~26          ; |testcases|time_division:i5|Add0~26          ; out0             ;
+; |testcases|time_division:i5|Add0~27          ; |testcases|time_division:i5|Add0~27          ; out0             ;
+; |testcases|time_division:i5|Add0~28          ; |testcases|time_division:i5|Add0~28          ; out0             ;
+; |testcases|time_division:i5|Add0~29          ; |testcases|time_division:i5|Add0~29          ; out0             ;
+; |testcases|time_division:i5|Add0~30          ; |testcases|time_division:i5|Add0~30          ; out0             ;
+; |testcases|time_division:i5|Add0~31          ; |testcases|time_division:i5|Add0~31          ; out0             ;
+; |testcases|time_division:i5|Add0~32          ; |testcases|time_division:i5|Add0~32          ; out0             ;
+; |testcases|time_division:i5|Add0~33          ; |testcases|time_division:i5|Add0~33          ; out0             ;
+; |testcases|time_division:i5|Add0~34          ; |testcases|time_division:i5|Add0~34          ; out0             ;
+; |testcases|time_division:i5|Add0~35          ; |testcases|time_division:i5|Add0~35          ; out0             ;
+; |testcases|time_division:i5|Add0~36          ; |testcases|time_division:i5|Add0~36          ; out0             ;
+; |testcases|time_division:i5|Add1~5           ; |testcases|time_division:i5|Add1~5           ; out0             ;
+; |testcases|time_division:i5|Add1~6           ; |testcases|time_division:i5|Add1~6           ; out0             ;
+; |testcases|time_division:i5|Add1~7           ; |testcases|time_division:i5|Add1~7           ; out0             ;
+; |testcases|time_division:i5|Add1~8           ; |testcases|time_division:i5|Add1~8           ; out0             ;
+; |testcases|time_division:i5|Add1~9           ; |testcases|time_division:i5|Add1~9           ; out0             ;
+; |testcases|time_division:i5|Add1~10          ; |testcases|time_division:i5|Add1~10          ; out0             ;
+; |testcases|time_division:i5|Add1~11          ; |testcases|time_division:i5|Add1~11          ; out0             ;
+; |testcases|time_division:i5|Add1~12          ; |testcases|time_division:i5|Add1~12          ; out0             ;
+; |testcases|time_division:i5|Add1~13          ; |testcases|time_division:i5|Add1~13          ; out0             ;
+; |testcases|time_division:i5|Add1~14          ; |testcases|time_division:i5|Add1~14          ; out0             ;
+; |testcases|time_division:i5|Add1~15          ; |testcases|time_division:i5|Add1~15          ; out0             ;
+; |testcases|time_division:i5|Add1~16          ; |testcases|time_division:i5|Add1~16          ; out0             ;
+; |testcases|time_division:i5|Add1~17          ; |testcases|time_division:i5|Add1~17          ; out0             ;
+; |testcases|time_division:i5|Add1~18          ; |testcases|time_division:i5|Add1~18          ; out0             ;
+; |testcases|time_division:i5|Add1~19          ; |testcases|time_division:i5|Add1~19          ; out0             ;
+; |testcases|time_division:i5|Add1~20          ; |testcases|time_division:i5|Add1~20          ; out0             ;
+; |testcases|time_division:i5|Add1~21          ; |testcases|time_division:i5|Add1~21          ; out0             ;
+; |testcases|time_division:i5|Add1~22          ; |testcases|time_division:i5|Add1~22          ; out0             ;
+; |testcases|time_division:i5|Add1~23          ; |testcases|time_division:i5|Add1~23          ; out0             ;
+; |testcases|time_division:i5|Add1~24          ; |testcases|time_division:i5|Add1~24          ; out0             ;
+; |testcases|time_division:i5|Add1~25          ; |testcases|time_division:i5|Add1~25          ; out0             ;
+; |testcases|time_division:i5|Add1~26          ; |testcases|time_division:i5|Add1~26          ; out0             ;
+; |testcases|time_division:i5|Add1~27          ; |testcases|time_division:i5|Add1~27          ; out0             ;
+; |testcases|time_division:i5|Add1~28          ; |testcases|time_division:i5|Add1~28          ; out0             ;
+; |testcases|time_division:i5|Add1~29          ; |testcases|time_division:i5|Add1~29          ; out0             ;
+; |testcases|time_division:i5|Add1~30          ; |testcases|time_division:i5|Add1~30          ; out0             ;
+; |testcases|time_division:i5|Add1~31          ; |testcases|time_division:i5|Add1~31          ; out0             ;
+; |testcases|time_division:i5|Add1~32          ; |testcases|time_division:i5|Add1~32          ; out0             ;
+; |testcases|time_division:i5|Add1~33          ; |testcases|time_division:i5|Add1~33          ; out0             ;
+; |testcases|time_division:i5|Add1~34          ; |testcases|time_division:i5|Add1~34          ; out0             ;
+; |testcases|time_division:i5|Add1~35          ; |testcases|time_division:i5|Add1~35          ; out0             ;
+; |testcases|time_division:i5|Add1~36          ; |testcases|time_division:i5|Add1~36          ; out0             ;
+; |testcases|time_division:i5|Add2~0           ; |testcases|time_division:i5|Add2~0           ; out0             ;
+; |testcases|time_division:i5|Add2~1           ; |testcases|time_division:i5|Add2~1           ; out0             ;
+; |testcases|time_division:i5|Add2~2           ; |testcases|time_division:i5|Add2~2           ; out0             ;
+; |testcases|time_division:i5|Add2~3           ; |testcases|time_division:i5|Add2~3           ; out0             ;
+; |testcases|time_division:i5|Add2~4           ; |testcases|time_division:i5|Add2~4           ; out0             ;
+; |testcases|time_division:i5|Add2~5           ; |testcases|time_division:i5|Add2~5           ; out0             ;
+; |testcases|time_division:i5|Add2~6           ; |testcases|time_division:i5|Add2~6           ; out0             ;
+; |testcases|time_division:i5|Add2~7           ; |testcases|time_division:i5|Add2~7           ; out0             ;
+; |testcases|time_division:i5|Add2~8           ; |testcases|time_division:i5|Add2~8           ; out0             ;
+; |testcases|wr_adr_gen:i6|Equal0~0            ; |testcases|wr_adr_gen:i6|Equal0~0            ; out0             ;
+; |testcases|wr_adr_gen:i6|Equal1~0            ; |testcases|wr_adr_gen:i6|Equal1~0            ; out0             ;
+; |testcases|time_division:i5|Equal0~0         ; |testcases|time_division:i5|Equal0~0         ; out0             ;
+; |testcases|time_division:i5|Equal0~1         ; |testcases|time_division:i5|Equal0~1         ; out0             ;
+; |testcases|time_division:i5|Equal0~2         ; |testcases|time_division:i5|Equal0~2         ; out0             ;
+; |testcases|time_division:i5|Equal0~3         ; |testcases|time_division:i5|Equal0~3         ; out0             ;
+; |testcases|time_division:i5|Equal0~4         ; |testcases|time_division:i5|Equal0~4         ; out0             ;
+; |testcases|time_division:i5|Equal0~5         ; |testcases|time_division:i5|Equal0~5         ; out0             ;
+; |testcases|time_division:i5|Equal0~6         ; |testcases|time_division:i5|Equal0~6         ; out0             ;
+; |testcases|time_division:i5|Equal0~7         ; |testcases|time_division:i5|Equal0~7         ; out0             ;
+; |testcases|time_division:i5|Equal0~8         ; |testcases|time_division:i5|Equal0~8         ; out0             ;
+; |testcases|time_division:i5|Equal0~9         ; |testcases|time_division:i5|Equal0~9         ; out0             ;
+; |testcases|time_division:i5|Equal0~10        ; |testcases|time_division:i5|Equal0~10        ; out0             ;
+; |testcases|time_division:i5|Equal0~11        ; |testcases|time_division:i5|Equal0~11        ; out0             ;
+; |testcases|time_division:i5|Equal0~12        ; |testcases|time_division:i5|Equal0~12        ; out0             ;
+; |testcases|time_division:i5|Equal0~13        ; |testcases|time_division:i5|Equal0~13        ; out0             ;
+; |testcases|time_division:i5|Equal0~14        ; |testcases|time_division:i5|Equal0~14        ; out0             ;
+; |testcases|time_division:i5|Equal0~15        ; |testcases|time_division:i5|Equal0~15        ; out0             ;
+; |testcases|time_division:i5|Equal0~16        ; |testcases|time_division:i5|Equal0~16        ; out0             ;
+; |testcases|time_division:i5|Equal0~17        ; |testcases|time_division:i5|Equal0~17        ; out0             ;
+; |testcases|time_division:i5|Equal0~18        ; |testcases|time_division:i5|Equal0~18        ; out0             ;
+; |testcases|time_division:i5|Equal0~19        ; |testcases|time_division:i5|Equal0~19        ; out0             ;
+; |testcases|time_division:i5|Equal0~20        ; |testcases|time_division:i5|Equal0~20        ; out0             ;
+; |testcases|time_division:i5|Equal1~0         ; |testcases|time_division:i5|Equal1~0         ; out0             ;
+; |testcases|time_division:i5|Equal1~1         ; |testcases|time_division:i5|Equal1~1         ; out0             ;
+; |testcases|time_division:i5|Equal1~2         ; |testcases|time_division:i5|Equal1~2         ; out0             ;
+; |testcases|time_division:i5|Equal1~3         ; |testcases|time_division:i5|Equal1~3         ; out0             ;
+; |testcases|time_division:i5|Equal1~4         ; |testcases|time_division:i5|Equal1~4         ; out0             ;
+; |testcases|time_division:i5|Equal1~5         ; |testcases|time_division:i5|Equal1~5         ; out0             ;
+; |testcases|time_division:i5|Equal1~6         ; |testcases|time_division:i5|Equal1~6         ; out0             ;
+; |testcases|time_division:i5|Equal1~7         ; |testcases|time_division:i5|Equal1~7         ; out0             ;
+; |testcases|time_division:i5|Equal1~8         ; |testcases|time_division:i5|Equal1~8         ; out0             ;
+; |testcases|time_division:i5|Equal1~9         ; |testcases|time_division:i5|Equal1~9         ; out0             ;
+; |testcases|time_division:i5|Equal1~10        ; |testcases|time_division:i5|Equal1~10        ; out0             ;
+; |testcases|time_division:i5|Equal1~11        ; |testcases|time_division:i5|Equal1~11        ; out0             ;
+; |testcases|time_division:i5|Equal1~12        ; |testcases|time_division:i5|Equal1~12        ; out0             ;
+; |testcases|time_division:i5|Equal1~13        ; |testcases|time_division:i5|Equal1~13        ; out0             ;
+; |testcases|time_division:i5|Equal1~14        ; |testcases|time_division:i5|Equal1~14        ; out0             ;
+; |testcases|time_division:i5|Equal1~15        ; |testcases|time_division:i5|Equal1~15        ; out0             ;
+; |testcases|time_division:i5|Equal1~16        ; |testcases|time_division:i5|Equal1~16        ; out0             ;
+; |testcases|time_division:i5|Equal1~17        ; |testcases|time_division:i5|Equal1~17        ; out0             ;
+; |testcases|time_division:i5|Equal1~18        ; |testcases|time_division:i5|Equal1~18        ; out0             ;
+; |testcases|time_division:i5|Equal1~19        ; |testcases|time_division:i5|Equal1~19        ; out0             ;
+; |testcases|time_division:i5|Equal1~20        ; |testcases|time_division:i5|Equal1~20        ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 23 04:55:09 2013
+Info: Command: quartus_sim --simulation_results_format=VWF oscill_sim -c oscill_sim
+Info (324025): Using vector source file "D:/7th Term/DLD Lab/Experiment 5/OURS/Sim/new_test.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      38.10 %
+Info (328052): Number of transitions in simulation is 35616
+Info (324045): Vector file oscill_sim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 326 megabytes
+    Info: Processing ended: Mon Dec 23 04:55:10 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

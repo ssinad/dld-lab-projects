@@ -1,0 +1,9 @@
+module tst(clk, rst, enable, adr, offset_x);
+	output[2:0] offset_x;
+	output[10:0] adr;
+	output enable;
+	input clk, rst;
+	reg [9:0] x, y;
+	VGA_CTRL(1'b0, 1'b0, 1'b0, clk, rst, x, y, H_sync, V_sync, R_out, B_out, G_out)
+	
+endmodule

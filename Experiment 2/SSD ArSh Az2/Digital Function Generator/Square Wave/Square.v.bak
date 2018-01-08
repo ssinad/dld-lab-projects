@@ -1,0 +1,5 @@
+module square_pwm(input clk, rst, output out);
+	wire [7:0] select;
+	Square sq(clk, rst, select);
+	PWM pwm(select, clk, out, rst );
+endmodule

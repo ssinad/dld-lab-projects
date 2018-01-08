@@ -1,0 +1,4 @@
+module bin2bcd();
+	input[8:0] A;
+	output[3:0] H, T, O;
+endmodule

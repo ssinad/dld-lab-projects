@@ -1,0 +1,13 @@
+module wr_adr_gen(wren, adr, trig, rst_trigm clk, rst);
+
+reg [9:0] count;
+
+always @(posedge clk , posedge rst)
+	begin
+	if (rst)
+		count <= 0;
+	else if (count == 639)
+	else if (wren)
+		count <= count + 1;
+	end
+endmodule

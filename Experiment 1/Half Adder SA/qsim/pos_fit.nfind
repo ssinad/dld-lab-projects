@@ -1,0 +1,14 @@
+fa
+A,input,user_entered
+B,input,user_entered
+C,input,user_entered
+Carry,output,user_entered
+inst6,comb,user_entered
+Sum,output,user_entered
+~ASDO~,input,compiler_generated
+~LVDS41p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+HA:inst1|Add0~0,comb,compiler_generated
+,hierarchy,user_entered
+HA:inst,hierarchy,user_entered
+HA:inst1,hierarchy,user_entered

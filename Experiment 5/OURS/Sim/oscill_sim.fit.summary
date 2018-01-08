@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec 08 15:46:00 2013
+Quartus II Version : 11.0 Build 208 07/03/2011 SP 1 SJ Web Edition
+Revision Name : oscill_sim
+Top-level Entity Name : oscill_sim
+Family : Cyclone II
+Device : EP2C5T144C6
+Timing Models : Final
+Total logic elements : 67 / 4,608 ( 1 % )
+    Total combinational functions : 64 / 4,608 ( 1 % )
+    Dedicated logic registers : 36 / 4,608 ( < 1 % )
+Total registers : 36
+Total pins : 42 / 89 ( 47 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

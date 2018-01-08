@@ -1,0 +1,9 @@
+module RGB_GEN();
+input[9:0]x, y;
+input[2:0]rgbi;
+output[2:0]rgbo;
+output [14:0]adr:
+assign adr=(x%160)*120+y%120;
+assign rgbo=rgbi;
+
+endmodule

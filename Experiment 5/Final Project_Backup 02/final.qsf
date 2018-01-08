@@ -1,0 +1,139 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+# Date created = 13:15:02  December 22, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		final_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY final_module
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:15:02  DECEMBER 22, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.0 SP1"
+set_global_assignment -name VERILOG_FILE "VGA controller.v"
+set_global_assignment -name VERILOG_FILE Trigger_Controller.v
+set_global_assignment -name VERILOG_FILE Time_Division.v
+set_global_assignment -name VERILOG_FILE scaler.v
+set_global_assignment -name VERILOG_FILE Sampler_Scaler.v
+set_global_assignment -name VERILOG_FILE DigFuncGen.v
+set_global_assignment -name VERILOG_FILE ctrl.v
+set_global_assignment -name VERILOG_FILE adr_gen.v
+set_global_assignment -name VERILOG_FILE final.v
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE "C:/Users/FPGA/Desktop/New folder/test.vwf"
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/FPGA/Desktop/New folder/test.vwf"
+set_global_assignment -name VERILOG_FILE rgb_gen.v
+set_global_assignment -name VERILOG_FILE grid.v
+set_global_assignment -name QIP_FILE storage_mem.qip
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE oscilloscope.v
+set_location_assignment PIN_R8 -to CLOCK_50
+set_location_assignment PIN_D12 -to SW0[0]
+set_location_assignment PIN_D11 -to SW0[1]
+set_location_assignment PIN_C11 -to SW0[2]
+set_location_assignment PIN_E9 -to SW0[3]
+set_location_assignment PIN_F9 -to SW0[4]
+set_location_assignment PIN_D8 -to SW0[5]
+set_location_assignment PIN_E7 -to SW0[6]
+set_location_assignment PIN_E6 -to SW0[7]
+set_location_assignment PIN_B11 -to SW1[0]
+set_location_assignment PIN_D9 -to SW1[1]
+set_location_assignment PIN_C9 -to SW1[2]
+set_location_assignment PIN_F8 -to SW1[3]
+set_location_assignment PIN_E8 -to SW1[4]
+set_location_assignment PIN_C8 -to SW1[5]
+set_location_assignment PIN_C6 -to SW1[6]
+set_location_assignment PIN_A7 -to SW1[7]
+set_location_assignment PIN_D6 -to LEDR[0]
+set_location_assignment PIN_B7 -to LEDR[1]
+set_location_assignment PIN_A6 -to LEDR[2]
+set_location_assignment PIN_B6 -to LEDR[3]
+set_location_assignment PIN_A5 -to LEDR[4]
+set_location_assignment PIN_D5 -to LEDR[5]
+set_location_assignment PIN_A4 -to LEDR[6]
+set_location_assignment PIN_B5 -to LEDR[7]
+set_location_assignment PIN_N12 -to LEDG[0]
+set_location_assignment PIN_P9 -to LEDG[1]
+set_location_assignment PIN_N11 -to LEDG[2]
+set_location_assignment PIN_L16 -to LEDG[3]
+set_location_assignment PIN_K16 -to LEDG[4]
+set_location_assignment PIN_R16 -to LEDG[5]
+set_location_assignment PIN_P15 -to LEDG[6]
+set_location_assignment PIN_P16 -to LEDG[7]
+set_location_assignment PIN_T12 -to HEX[0]
+set_location_assignment PIN_T13 -to HEX[1]
+set_location_assignment PIN_R12 -to HEX[2]
+set_location_assignment PIN_P11 -to HEX[3]
+set_location_assignment PIN_R10 -to HEX[4]
+set_location_assignment PIN_T11 -to HEX[5]
+set_location_assignment PIN_R13 -to HEX[6]
+set_location_assignment PIN_T10 -to HEX[7]
+set_location_assignment PIN_L15 -to CATHODE[0]
+set_location_assignment PIN_N9 -to CATHODE[1]
+set_location_assignment PIN_R11 -to CATHODE[2]
+set_location_assignment PIN_T14 -to CATHODE[3]
+set_location_assignment PIN_B8 -to IN[0]
+set_location_assignment PIN_C3 -to IN[1]
+set_location_assignment PIN_A8 -to IN[2]
+set_location_assignment PIN_D3 -to IN[3]
+set_location_assignment PIN_J16 -to IN[4]
+set_location_assignment PIN_L13 -to IN[5]
+set_location_assignment PIN_M10 -to IN[6]
+set_location_assignment PIN_N14 -to IN[7]
+set_location_assignment PIN_K15 -to IN[8]
+set_location_assignment PIN_J13 -to IN[9]
+set_location_assignment PIN_A3 -to OUT[0]
+set_location_assignment PIN_A2 -to OUT[1]
+set_location_assignment PIN_B4 -to OUT[2]
+set_location_assignment PIN_B3 -to OUT[3]
+set_location_assignment PIN_N16 -to OUT[4]
+set_location_assignment PIN_N15 -to OUT[5]
+set_location_assignment PIN_P14 -to OUT[6]
+set_location_assignment PIN_L14 -to OUT[7]
+set_location_assignment PIN_R14 -to PB[0]
+set_location_assignment PIN_J14 -to PB[1]
+set_location_assignment PIN_T15 -to VGA_HS
+set_location_assignment PIN_F13 -to VGA_VS
+set_location_assignment PIN_A12 -to VGA_R
+set_location_assignment PIN_E11 -to VGA_G
+set_location_assignment PIN_B12 -to VGA_B
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name VERILOG_FILE final_module.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

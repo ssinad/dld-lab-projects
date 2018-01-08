@@ -1,0 +1,18 @@
+module scaller();
+	input[7:0] in_scaler;
+	input [1:0] volt_per_div;
+	output [7:0] out_scaler;
+	always@(*)
+	begin
+		case(volt_per_div)
+		2'b00:
+			out_scaler=in_scaler;
+		2'b01:
+			out_scaler={0,in_scaler[7:1]};
+		2'b10:
+			out_scaler={0,0,in_scaler[7:2]};
+		2'b11:
+			out_scaler={3'b0,in_scaler[7:3]};
+		endcase
+	end
+endmodule

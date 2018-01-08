@@ -1,0 +1,2 @@
+module rgb_gen(x_in, y_in, data_in);
+endmodule

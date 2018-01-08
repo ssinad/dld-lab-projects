@@ -1,0 +1,4 @@
+module PWM(duty, clk_in, out);
+	input[7:0] duty;
+	input clk_in;
+	output out;

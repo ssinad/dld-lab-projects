@@ -1,0 +1,11 @@
+module sampler_scaller();
+input clk, rst;
+input [1:0] volt_per_div;
+input[7:0] in;
+output reg[7:0] out_ss;
+
+scaler i1(in, volt_per_div, out_scaler);
+//time_division i2(clk_in, rst, time_per_div, clk_out);
+
+
+endmodule

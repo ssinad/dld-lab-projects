@@ -1,0 +1,5 @@
+module rgb_gen(data_in, y_in, rgb_out);
+	wire is_data;
+	
+	assign is_data = (y_in + data_in == 367);
+endmodule

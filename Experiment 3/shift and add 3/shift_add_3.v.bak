@@ -1,0 +1,5 @@
+module shift_add_3(in, out);
+	input unsigned[3:0] in;
+	output unsigned[3:0] out;
+	
+endmodule

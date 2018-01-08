@@ -1,0 +1,5 @@
+module switcher( Sel, Ones, Tens, Hundreds, Anodes, Cathodes);// 00 01 11 10
+		input [1:0] Sel;
+		input [7:0] Ones, Tens, Hundreds;
+		output reg [7:0] 
+endmodule

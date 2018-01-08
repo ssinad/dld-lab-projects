@@ -1,0 +1,7 @@
+module final(wren, adr, trig, rst_trig, clk, rst);
+
+output wren, rst_trig;
+output [9:0] adr;
+input trig, clk, rst;
+
+endmodule

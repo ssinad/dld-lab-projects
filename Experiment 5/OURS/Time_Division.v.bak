@@ -1,0 +1,12 @@
+module time_division();
+input clk_in, rst;
+input [1:0]time_per_div;
+output clk_out;
+reg[19:0] timer, top;
+always@(posedge clk_in)
+if(rst || timer == top)
+timer=0;
+else
+timer=timer+1;
+
+endmodule

@@ -1,0 +1,12 @@
+module aslekar();
+	input unsigned [7:0] level, sample;
+   input slope, mode, rst, clk;
+	output trig_en;
+	reg unsigned [7:0] prev;
+	always@(posedge clk, posedge rst)
+	if(rst)
+	prev=0;
+	else
+	prev=sample;
+	
+endmodule

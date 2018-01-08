@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.246
+TNS   : -194.242
+
+Type  : Slow 1200mV 85C Model Setup 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -3.022
+TNS   : -35.146
+
+Type  : Slow 1200mV 85C Model Setup 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -2.318
+TNS   : -55.300
+
+Type  : Slow 1200mV 85C Model Setup 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -2.001
+TNS   : -27.933
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.162
+TNS   : -0.198
+
+Type  : Slow 1200mV 85C Model Hold 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
+Slack : -1.409
+TNS   : -1.409
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
+Slack : 1.855
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -91.696
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -1.000
+TNS   : -64.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.820
+TNS   : -166.827
+
+Type  : Slow 1200mV 0C Model Setup 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -2.548
+TNS   : -29.245
+
+Type  : Slow 1200mV 0C Model Setup 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -1.959
+TNS   : -44.422
+
+Type  : Slow 1200mV 0C Model Setup 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -1.686
+TNS   : -23.051
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.161
+TNS   : -0.191
+
+Type  : Slow 1200mV 0C Model Hold 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.143
+TNS   : -1.143
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 1.671
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -91.696
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -1.000
+TNS   : -64.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.352
+TNS   : -74.005
+
+Type  : Fast 1200mV 0C Model Setup 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -1.280
+TNS   : -10.878
+
+Type  : Fast 1200mV 0C Model Setup 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -0.906
+TNS   : -17.297
+
+Type  : Fast 1200mV 0C Model Setup 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -0.675
+TNS   : -7.728
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.181
+TNS   : -0.308
+
+Type  : Fast 1200mV 0C Model Hold 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -0.435
+TNS   : -0.435
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 1.049
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -91.817
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|func_clk'
+Slack : -1.000
+TNS   : -64.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|time_division:i5|clk_out'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'oscilloscpoe:comb_3|VGA_CTRL:i2|clkp'
+Slack : -1.000
+TNS   : -20.000
+
+------------------------------------------------------------

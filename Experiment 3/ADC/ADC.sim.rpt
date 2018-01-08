@@ -1,0 +1,413 @@
+Simulator report for ADC
+Sun Oct 27 14:57:24 2013
+Quartus II Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 15.0 us      ;
+; Simulation Netlist Size     ; 226 nodes    ;
+; Simulation Coverage         ;      82.67 % ;
+; Total Number of Transitions ; 23911        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                              ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+; Option                                                                                     ; Setting                            ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                ;               ;
+; Vector input source                                                                        ; C:/Users/FPGA/Desktop/EX3/test.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                 ; On            ;
+; Check outputs                                                                              ; Off                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                ; Off           ;
+; Detect glitches                                                                            ; Off                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                               ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      82.67 % ;
+; Total nodes checked                                 ; 226          ;
+; Total output ports checked                          ; 225          ;
+; Total output ports with complete 1/0-value coverage ; 186          ;
+; Total output ports with no 1/0-value coverage       ; 26           ;
+; Total output ports with no 1-value coverage         ; 30           ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                  ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |ADC|CLOCK_50                       ; |ADC|CLOCK_50                       ; out              ;
+; |ADC|search_clk                     ; |ADC|search_clk                     ; out              ;
+; |ADC|pwm_out                        ; |ADC|pwm_out                        ; pin_out          ;
+; |ADC|bs_out[0]                      ; |ADC|bs_out[0]                      ; pin_out          ;
+; |ADC|bs_out[1]                      ; |ADC|bs_out[1]                      ; pin_out          ;
+; |ADC|bs_out[2]                      ; |ADC|bs_out[2]                      ; pin_out          ;
+; |ADC|bs_out[3]                      ; |ADC|bs_out[3]                      ; pin_out          ;
+; |ADC|bs_out[4]                      ; |ADC|bs_out[4]                      ; pin_out          ;
+; |ADC|bs_out[5]                      ; |ADC|bs_out[5]                      ; pin_out          ;
+; |ADC|bs_out[6]                      ; |ADC|bs_out[6]                      ; pin_out          ;
+; |ADC|bs_out[7]                      ; |ADC|bs_out[7]                      ; pin_out          ;
+; |ADC|PWM:pwm|count[7]               ; |ADC|PWM:pwm|count[7]               ; regout           ;
+; |ADC|PWM:pwm|count[6]               ; |ADC|PWM:pwm|count[6]               ; regout           ;
+; |ADC|PWM:pwm|count[5]               ; |ADC|PWM:pwm|count[5]               ; regout           ;
+; |ADC|PWM:pwm|count[4]               ; |ADC|PWM:pwm|count[4]               ; regout           ;
+; |ADC|PWM:pwm|count[3]               ; |ADC|PWM:pwm|count[3]               ; regout           ;
+; |ADC|PWM:pwm|count[2]               ; |ADC|PWM:pwm|count[2]               ; regout           ;
+; |ADC|PWM:pwm|count[1]               ; |ADC|PWM:pwm|count[1]               ; regout           ;
+; |ADC|BinarySearch:bs|middle[7]      ; |ADC|BinarySearch:bs|middle[7]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[6]      ; |ADC|BinarySearch:bs|middle[6]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[5]      ; |ADC|BinarySearch:bs|middle[5]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[4]      ; |ADC|BinarySearch:bs|middle[4]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[3]      ; |ADC|BinarySearch:bs|middle[3]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[2]      ; |ADC|BinarySearch:bs|middle[2]      ; regout           ;
+; |ADC|BinarySearch:bs|middle[1]      ; |ADC|BinarySearch:bs|middle[1]      ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound~0  ; |ADC|BinarySearch:bs|upper_bound~0  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~1  ; |ADC|BinarySearch:bs|upper_bound~1  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~2  ; |ADC|BinarySearch:bs|upper_bound~2  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~3  ; |ADC|BinarySearch:bs|upper_bound~3  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~4  ; |ADC|BinarySearch:bs|upper_bound~4  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~5  ; |ADC|BinarySearch:bs|upper_bound~5  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~6  ; |ADC|BinarySearch:bs|upper_bound~6  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~7  ; |ADC|BinarySearch:bs|upper_bound~7  ; out              ;
+; |ADC|BinarySearch:bs|middle[0]      ; |ADC|BinarySearch:bs|middle[0]      ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound~8  ; |ADC|BinarySearch:bs|upper_bound~8  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~9  ; |ADC|BinarySearch:bs|upper_bound~9  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~10 ; |ADC|BinarySearch:bs|upper_bound~10 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~11 ; |ADC|BinarySearch:bs|upper_bound~11 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~12 ; |ADC|BinarySearch:bs|upper_bound~12 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~13 ; |ADC|BinarySearch:bs|upper_bound~13 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~14 ; |ADC|BinarySearch:bs|upper_bound~14 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound~15 ; |ADC|BinarySearch:bs|upper_bound~15 ; out              ;
+; |ADC|BinarySearch:bs|upper_bound[7] ; |ADC|BinarySearch:bs|upper_bound[7] ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[6] ; |ADC|BinarySearch:bs|upper_bound[6] ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[5] ; |ADC|BinarySearch:bs|upper_bound[5] ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[3] ; |ADC|BinarySearch:bs|upper_bound[3] ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[2] ; |ADC|BinarySearch:bs|upper_bound[2] ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[1] ; |ADC|BinarySearch:bs|upper_bound[1] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound~1  ; |ADC|BinarySearch:bs|lower_bound~1  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~2  ; |ADC|BinarySearch:bs|lower_bound~2  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~3  ; |ADC|BinarySearch:bs|lower_bound~3  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~4  ; |ADC|BinarySearch:bs|lower_bound~4  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~5  ; |ADC|BinarySearch:bs|lower_bound~5  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~6  ; |ADC|BinarySearch:bs|lower_bound~6  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~7  ; |ADC|BinarySearch:bs|lower_bound~7  ; out              ;
+; |ADC|BinarySearch:bs|upper_bound[0] ; |ADC|BinarySearch:bs|upper_bound[0] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound~9  ; |ADC|BinarySearch:bs|lower_bound~9  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~10 ; |ADC|BinarySearch:bs|lower_bound~10 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~11 ; |ADC|BinarySearch:bs|lower_bound~11 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~12 ; |ADC|BinarySearch:bs|lower_bound~12 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~13 ; |ADC|BinarySearch:bs|lower_bound~13 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~14 ; |ADC|BinarySearch:bs|lower_bound~14 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~15 ; |ADC|BinarySearch:bs|lower_bound~15 ; out              ;
+; |ADC|BinarySearch:bs|lower_bound[0] ; |ADC|BinarySearch:bs|lower_bound[0] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[6] ; |ADC|BinarySearch:bs|lower_bound[6] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[5] ; |ADC|BinarySearch:bs|lower_bound[5] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[4] ; |ADC|BinarySearch:bs|lower_bound[4] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[3] ; |ADC|BinarySearch:bs|lower_bound[3] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[2] ; |ADC|BinarySearch:bs|lower_bound[2] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound[1] ; |ADC|BinarySearch:bs|lower_bound[1] ; regout           ;
+; |ADC|LessThan0~0                    ; |ADC|LessThan0~0                    ; out0             ;
+; |ADC|LessThan0~1                    ; |ADC|LessThan0~1                    ; out0             ;
+; |ADC|LessThan0~2                    ; |ADC|LessThan0~2                    ; out0             ;
+; |ADC|LessThan0~3                    ; |ADC|LessThan0~3                    ; out0             ;
+; |ADC|LessThan0~4                    ; |ADC|LessThan0~4                    ; out0             ;
+; |ADC|LessThan0~6                    ; |ADC|LessThan0~6                    ; out0             ;
+; |ADC|LessThan0~7                    ; |ADC|LessThan0~7                    ; out0             ;
+; |ADC|LessThan0~8                    ; |ADC|LessThan0~8                    ; out0             ;
+; |ADC|LessThan0~9                    ; |ADC|LessThan0~9                    ; out0             ;
+; |ADC|LessThan0~10                   ; |ADC|LessThan0~10                   ; out0             ;
+; |ADC|LessThan0~11                   ; |ADC|LessThan0~11                   ; out0             ;
+; |ADC|LessThan0~12                   ; |ADC|LessThan0~12                   ; out0             ;
+; |ADC|LessThan0~13                   ; |ADC|LessThan0~13                   ; out0             ;
+; |ADC|LessThan0~14                   ; |ADC|LessThan0~14                   ; out0             ;
+; |ADC|LessThan0~15                   ; |ADC|LessThan0~15                   ; out0             ;
+; |ADC|LessThan0~16                   ; |ADC|LessThan0~16                   ; out0             ;
+; |ADC|LessThan0~17                   ; |ADC|LessThan0~17                   ; out0             ;
+; |ADC|LessThan0~18                   ; |ADC|LessThan0~18                   ; out0             ;
+; |ADC|LessThan0~19                   ; |ADC|LessThan0~19                   ; out0             ;
+; |ADC|LessThan0~20                   ; |ADC|LessThan0~20                   ; out0             ;
+; |ADC|LessThan0~21                   ; |ADC|LessThan0~21                   ; out0             ;
+; |ADC|LessThan0~22                   ; |ADC|LessThan0~22                   ; out0             ;
+; |ADC|LessThan0~23                   ; |ADC|LessThan0~23                   ; out0             ;
+; |ADC|LessThan0~24                   ; |ADC|LessThan0~24                   ; out0             ;
+; |ADC|LessThan0~26                   ; |ADC|LessThan0~26                   ; out0             ;
+; |ADC|LessThan0~27                   ; |ADC|LessThan0~27                   ; out0             ;
+; |ADC|LessThan0~28                   ; |ADC|LessThan0~28                   ; out0             ;
+; |ADC|PWM:pwm|LessThan0~0            ; |ADC|PWM:pwm|LessThan0~0            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~1            ; |ADC|PWM:pwm|LessThan0~1            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~2            ; |ADC|PWM:pwm|LessThan0~2            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~3            ; |ADC|PWM:pwm|LessThan0~3            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~4            ; |ADC|PWM:pwm|LessThan0~4            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~5            ; |ADC|PWM:pwm|LessThan0~5            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~6            ; |ADC|PWM:pwm|LessThan0~6            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~7            ; |ADC|PWM:pwm|LessThan0~7            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~8            ; |ADC|PWM:pwm|LessThan0~8            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~9            ; |ADC|PWM:pwm|LessThan0~9            ; out0             ;
+; |ADC|PWM:pwm|LessThan0~10           ; |ADC|PWM:pwm|LessThan0~10           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~11           ; |ADC|PWM:pwm|LessThan0~11           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~12           ; |ADC|PWM:pwm|LessThan0~12           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~13           ; |ADC|PWM:pwm|LessThan0~13           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~14           ; |ADC|PWM:pwm|LessThan0~14           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~15           ; |ADC|PWM:pwm|LessThan0~15           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~16           ; |ADC|PWM:pwm|LessThan0~16           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~17           ; |ADC|PWM:pwm|LessThan0~17           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~18           ; |ADC|PWM:pwm|LessThan0~18           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~19           ; |ADC|PWM:pwm|LessThan0~19           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~20           ; |ADC|PWM:pwm|LessThan0~20           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~21           ; |ADC|PWM:pwm|LessThan0~21           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~22           ; |ADC|PWM:pwm|LessThan0~22           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~23           ; |ADC|PWM:pwm|LessThan0~23           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~24           ; |ADC|PWM:pwm|LessThan0~24           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~26           ; |ADC|PWM:pwm|LessThan0~26           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~27           ; |ADC|PWM:pwm|LessThan0~27           ; out0             ;
+; |ADC|PWM:pwm|LessThan0~28           ; |ADC|PWM:pwm|LessThan0~28           ; out0             ;
+; |ADC|PWM:pwm|Add0~0                 ; |ADC|PWM:pwm|Add0~0                 ; out0             ;
+; |ADC|PWM:pwm|Add0~1                 ; |ADC|PWM:pwm|Add0~1                 ; out0             ;
+; |ADC|PWM:pwm|Add0~2                 ; |ADC|PWM:pwm|Add0~2                 ; out0             ;
+; |ADC|PWM:pwm|Add0~3                 ; |ADC|PWM:pwm|Add0~3                 ; out0             ;
+; |ADC|PWM:pwm|Add0~4                 ; |ADC|PWM:pwm|Add0~4                 ; out0             ;
+; |ADC|PWM:pwm|Add0~5                 ; |ADC|PWM:pwm|Add0~5                 ; out0             ;
+; |ADC|PWM:pwm|Add0~6                 ; |ADC|PWM:pwm|Add0~6                 ; out0             ;
+; |ADC|PWM:pwm|Add0~7                 ; |ADC|PWM:pwm|Add0~7                 ; out0             ;
+; |ADC|PWM:pwm|Add0~8                 ; |ADC|PWM:pwm|Add0~8                 ; out0             ;
+; |ADC|PWM:pwm|Add0~9                 ; |ADC|PWM:pwm|Add0~9                 ; out0             ;
+; |ADC|PWM:pwm|Add0~10                ; |ADC|PWM:pwm|Add0~10                ; out0             ;
+; |ADC|PWM:pwm|Add0~11                ; |ADC|PWM:pwm|Add0~11                ; out0             ;
+; |ADC|PWM:pwm|Add0~12                ; |ADC|PWM:pwm|Add0~12                ; out0             ;
+; |ADC|BinarySearch:bs|Add0~0         ; |ADC|BinarySearch:bs|Add0~0         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~1         ; |ADC|BinarySearch:bs|Add0~1         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~2         ; |ADC|BinarySearch:bs|Add0~2         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~3         ; |ADC|BinarySearch:bs|Add0~3         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~4         ; |ADC|BinarySearch:bs|Add0~4         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~5         ; |ADC|BinarySearch:bs|Add0~5         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~6         ; |ADC|BinarySearch:bs|Add0~6         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~7         ; |ADC|BinarySearch:bs|Add0~7         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~8         ; |ADC|BinarySearch:bs|Add0~8         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~9         ; |ADC|BinarySearch:bs|Add0~9         ; out0             ;
+; |ADC|BinarySearch:bs|Add0~10        ; |ADC|BinarySearch:bs|Add0~10        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~11        ; |ADC|BinarySearch:bs|Add0~11        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~12        ; |ADC|BinarySearch:bs|Add0~12        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~13        ; |ADC|BinarySearch:bs|Add0~13        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~14        ; |ADC|BinarySearch:bs|Add0~14        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~15        ; |ADC|BinarySearch:bs|Add0~15        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~16        ; |ADC|BinarySearch:bs|Add0~16        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~17        ; |ADC|BinarySearch:bs|Add0~17        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~18        ; |ADC|BinarySearch:bs|Add0~18        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~19        ; |ADC|BinarySearch:bs|Add0~19        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~21        ; |ADC|BinarySearch:bs|Add0~21        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~22        ; |ADC|BinarySearch:bs|Add0~22        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~23        ; |ADC|BinarySearch:bs|Add0~23        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~24        ; |ADC|BinarySearch:bs|Add0~24        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~25        ; |ADC|BinarySearch:bs|Add0~25        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~26        ; |ADC|BinarySearch:bs|Add0~26        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~27        ; |ADC|BinarySearch:bs|Add0~27        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~28        ; |ADC|BinarySearch:bs|Add0~28        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~29        ; |ADC|BinarySearch:bs|Add0~29        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~0         ; |ADC|BinarySearch:bs|Add1~0         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~1         ; |ADC|BinarySearch:bs|Add1~1         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~2         ; |ADC|BinarySearch:bs|Add1~2         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~3         ; |ADC|BinarySearch:bs|Add1~3         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~4         ; |ADC|BinarySearch:bs|Add1~4         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~5         ; |ADC|BinarySearch:bs|Add1~5         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~6         ; |ADC|BinarySearch:bs|Add1~6         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~7         ; |ADC|BinarySearch:bs|Add1~7         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~8         ; |ADC|BinarySearch:bs|Add1~8         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~10        ; |ADC|BinarySearch:bs|Add1~10        ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~0       ; |ADC|BinarySearch:bs|Equal0~0       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~1       ; |ADC|BinarySearch:bs|Equal0~1       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~2       ; |ADC|BinarySearch:bs|Equal0~2       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~3       ; |ADC|BinarySearch:bs|Equal0~3       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~4       ; |ADC|BinarySearch:bs|Equal0~4       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~5       ; |ADC|BinarySearch:bs|Equal0~5       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~6       ; |ADC|BinarySearch:bs|Equal0~6       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~7       ; |ADC|BinarySearch:bs|Equal0~7       ; out0             ;
+; |ADC|BinarySearch:bs|Equal0~8       ; |ADC|BinarySearch:bs|Equal0~8       ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |ADC|rst                            ; |ADC|rst                            ; out              ;
+; |ADC|disp_out[2]                    ; |ADC|disp_out[2]                    ; pin_out          ;
+; |ADC|disp_out[3]                    ; |ADC|disp_out[3]                    ; pin_out          ;
+; |ADC|disp_out[5]                    ; |ADC|disp_out[5]                    ; pin_out          ;
+; |ADC|disp_out[6]                    ; |ADC|disp_out[6]                    ; pin_out          ;
+; |ADC|disp_out[7]                    ; |ADC|disp_out[7]                    ; pin_out          ;
+; |ADC|dummy_input[0]                 ; |ADC|dummy_input[0]                 ; out              ;
+; |ADC|dummy_input[1]                 ; |ADC|dummy_input[1]                 ; out              ;
+; |ADC|dummy_input[2]                 ; |ADC|dummy_input[2]                 ; out              ;
+; |ADC|dummy_input[4]                 ; |ADC|dummy_input[4]                 ; out              ;
+; |ADC|dummy_input[7]                 ; |ADC|dummy_input[7]                 ; out              ;
+; |ADC|BinarySearch:bs|out[7]         ; |ADC|BinarySearch:bs|out[7]         ; regout           ;
+; |ADC|BinarySearch:bs|out[6]         ; |ADC|BinarySearch:bs|out[6]         ; regout           ;
+; |ADC|BinarySearch:bs|out[5]         ; |ADC|BinarySearch:bs|out[5]         ; regout           ;
+; |ADC|BinarySearch:bs|out[3]         ; |ADC|BinarySearch:bs|out[3]         ; regout           ;
+; |ADC|BinarySearch:bs|out[2]         ; |ADC|BinarySearch:bs|out[2]         ; regout           ;
+; |ADC|BinarySearch:bs|upper_bound[4] ; |ADC|BinarySearch:bs|upper_bound[4] ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound~0  ; |ADC|BinarySearch:bs|lower_bound~0  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~8  ; |ADC|BinarySearch:bs|lower_bound~8  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound[7] ; |ADC|BinarySearch:bs|lower_bound[7] ; regout           ;
+; |ADC|LessThan0~5                    ; |ADC|LessThan0~5                    ; out0             ;
+; |ADC|LessThan0~25                   ; |ADC|LessThan0~25                   ; out0             ;
+; |ADC|PWM:pwm|LessThan0~25           ; |ADC|PWM:pwm|LessThan0~25           ; out0             ;
+; |ADC|BinarySearch:bs|Add0~20        ; |ADC|BinarySearch:bs|Add0~20        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~30        ; |ADC|BinarySearch:bs|Add0~30        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~31        ; |ADC|BinarySearch:bs|Add0~31        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~9         ; |ADC|BinarySearch:bs|Add1~9         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~11        ; |ADC|BinarySearch:bs|Add1~11        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~12        ; |ADC|BinarySearch:bs|Add1~12        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~13        ; |ADC|BinarySearch:bs|Add1~13        ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |ADC|disp_out[0]                    ; |ADC|disp_out[0]                    ; pin_out          ;
+; |ADC|disp_out[1]                    ; |ADC|disp_out[1]                    ; pin_out          ;
+; |ADC|disp_out[2]                    ; |ADC|disp_out[2]                    ; pin_out          ;
+; |ADC|disp_out[3]                    ; |ADC|disp_out[3]                    ; pin_out          ;
+; |ADC|disp_out[4]                    ; |ADC|disp_out[4]                    ; pin_out          ;
+; |ADC|disp_out[5]                    ; |ADC|disp_out[5]                    ; pin_out          ;
+; |ADC|disp_out[6]                    ; |ADC|disp_out[6]                    ; pin_out          ;
+; |ADC|disp_out[7]                    ; |ADC|disp_out[7]                    ; pin_out          ;
+; |ADC|dummy_input[0]                 ; |ADC|dummy_input[0]                 ; out              ;
+; |ADC|dummy_input[2]                 ; |ADC|dummy_input[2]                 ; out              ;
+; |ADC|dummy_input[3]                 ; |ADC|dummy_input[3]                 ; out              ;
+; |ADC|dummy_input[5]                 ; |ADC|dummy_input[5]                 ; out              ;
+; |ADC|dummy_input[6]                 ; |ADC|dummy_input[6]                 ; out              ;
+; |ADC|dummy_input[7]                 ; |ADC|dummy_input[7]                 ; out              ;
+; |ADC|BinarySearch:bs|out[7]         ; |ADC|BinarySearch:bs|out[7]         ; regout           ;
+; |ADC|BinarySearch:bs|out[6]         ; |ADC|BinarySearch:bs|out[6]         ; regout           ;
+; |ADC|BinarySearch:bs|out[5]         ; |ADC|BinarySearch:bs|out[5]         ; regout           ;
+; |ADC|BinarySearch:bs|out[4]         ; |ADC|BinarySearch:bs|out[4]         ; regout           ;
+; |ADC|BinarySearch:bs|out[3]         ; |ADC|BinarySearch:bs|out[3]         ; regout           ;
+; |ADC|BinarySearch:bs|out[2]         ; |ADC|BinarySearch:bs|out[2]         ; regout           ;
+; |ADC|BinarySearch:bs|out[1]         ; |ADC|BinarySearch:bs|out[1]         ; regout           ;
+; |ADC|BinarySearch:bs|out[0]         ; |ADC|BinarySearch:bs|out[0]         ; regout           ;
+; |ADC|BinarySearch:bs|lower_bound~0  ; |ADC|BinarySearch:bs|lower_bound~0  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound~8  ; |ADC|BinarySearch:bs|lower_bound~8  ; out              ;
+; |ADC|BinarySearch:bs|lower_bound[7] ; |ADC|BinarySearch:bs|lower_bound[7] ; regout           ;
+; |ADC|LessThan0~5                    ; |ADC|LessThan0~5                    ; out0             ;
+; |ADC|LessThan0~25                   ; |ADC|LessThan0~25                   ; out0             ;
+; |ADC|PWM:pwm|LessThan0~25           ; |ADC|PWM:pwm|LessThan0~25           ; out0             ;
+; |ADC|BinarySearch:bs|Add0~20        ; |ADC|BinarySearch:bs|Add0~20        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~30        ; |ADC|BinarySearch:bs|Add0~30        ; out0             ;
+; |ADC|BinarySearch:bs|Add0~31        ; |ADC|BinarySearch:bs|Add0~31        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~9         ; |ADC|BinarySearch:bs|Add1~9         ; out0             ;
+; |ADC|BinarySearch:bs|Add1~11        ; |ADC|BinarySearch:bs|Add1~11        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~12        ; |ADC|BinarySearch:bs|Add1~12        ; out0             ;
+; |ADC|BinarySearch:bs|Add1~13        ; |ADC|BinarySearch:bs|Add1~13        ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Oct 27 14:57:24 2013
+Info: Command: quartus_sim --simulation_results_format=VWF ADC -c ADC
+Info: Using vector source file "C:/Users/FPGA/Desktop/EX3/test.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      82.67 %
+Info: Number of transitions in simulation is 23911
+Info: Vector file ADC.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 172 megabytes
+    Info: Processing ended: Sun Oct 27 14:57:24 2013
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

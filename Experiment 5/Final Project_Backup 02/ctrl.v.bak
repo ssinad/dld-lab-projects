@@ -1,0 +1,24 @@
+module ctrl(clk, rst, trig, rst_trig, wren);
+
+reg [1:0] ps, ns;
+
+always @(posedge clk,  posedge rst)
+begin
+	if (rst)
+		ps <= 0;
+	else
+		ps <= ns;
+end
+
+always @(*)
+begin
+ns <= 0;
+case (ps)
+	2'b00:
+		if (trig)
+			ns <= 1;
+		else
+			ns <= 0;
+endcase
+end
+endmodule

@@ -1,0 +1,4 @@
+module Grid(x_in, y_in, is_grid);
+
+assign is_grid = (x % 40 == 0) || (y % 40 == 0);
+endmodule

@@ -1,0 +1,8 @@
+module(in, ones, tens, hundreds);
+input[8:0] in;
+output[3:0] ones, tens, hundreds;
+wire
+assign ones=in%10;
+assign tens=(in/10)%10;
+assign hundreds=(in/100)%10;
+endmodule

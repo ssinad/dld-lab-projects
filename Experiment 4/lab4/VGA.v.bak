@@ -1,0 +1,3 @@
+module VGA_CTRL(R_in, G_in, B_in, clk, rst, );
+input R_in, G_in, B_in, clk, rst;
+output 

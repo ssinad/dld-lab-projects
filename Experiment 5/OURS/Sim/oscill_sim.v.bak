@@ -1,0 +1,7 @@
+module (level, sample, slope, mode, rst, clk, trig_en);
+input unsigned [7:0] level, sample;
+   input slope, mode, rst, clk;
+	output trig_en;
+trig(level, sample, slope, mode, rst, clk, trig_en);
+	
+endmodule
